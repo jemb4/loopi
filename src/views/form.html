@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #f6faff;
+      }
+      form {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Formulario -->
+    <form
+      class="max-w-2xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md space-y-6"
+    >
+      <!-- Título -->
+      <div class="relative z-0 w-full group">
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder=" "
+          required
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        />
+        <label
+          for="title"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Título</label
+        >
+      </div>
+
+      <!-- Categoría -->
+      <div>
+        <label
+          for="category"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Categoría</label
+        >
+        <select
+          id="category"
+          name="category"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+        >
+          <option>Smartphone</option>
+          <option>Tablet</option>
+        </select>
+      </div>
+
+      <!-- Precio -->
+      <div class="relative z-0 w-full group">
+        <input
+          type="number"
+          name="price"
+          id="price"
+          placeholder=" "
+          required
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        />
+        <label
+          for="price"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Precio</label
+        >
+      </div>
+
+      <!-- Imagen -->
+      <div>
+        <label
+          for="image"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Subir imagen</label
+        >
+        <input
+          id="image"
+          type="file"
+          name="image"
+          class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+        />
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+          Una imagen del producto ayuda a los compradores.
+        </p>
+      </div>
+
+      <!-- Condición -->
+      <div class="relative z-0 w-full group">
+        <input
+          type="text"
+          name="condition"
+          id="condition"
+          placeholder=" "
+          required
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        />
+        <label
+          for="condition"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Condición</label
+        >
+      </div>
+
+      <!-- Año -->
+      <div class="relative z-0 w-full group">
+        <input
+          type="number"
+          name="year"
+          id="year"
+          placeholder=" "
+          required
+          class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        />
+        <label
+          for="year"
+          class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6"
+          >Año</label
+        >
+      </div>
+
+      <!-- Descripción -->
+      <div>
+        <label
+          for="description"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Descripción</label
+        >
+        <textarea
+          id="description"
+          name="description"
+          rows="4"
+          required
+          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+        ></textarea>
+      </div>
+
+      <!-- Botón -->
+      <button
+        type="submit"
+        class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Enviar
+      </button>
+    </form>
+    <!-- Formulario -->
+  </body>
+</html>
