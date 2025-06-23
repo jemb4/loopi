@@ -11,69 +11,67 @@
 
 <body>
 
-  <footer class="bg-[#003c85] text-white text-sm mt-8">
-    <div class="w-full max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row md:justify-between md:items-center gap-6">
-      <!-- Logo -->
-      <a href="/" class="flex items-center" aria-label="Ir a la página principal de Loopi">
-        <img src="../img/LOGO.png" class="w-32 h-auto" alt="Loopi Logo" />
-      </a>
+<footer class="bg-[#003c85] text-white text-sm">
+    <div class="w-full max-w-7xl mx-auto px-4 py-2 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+        <!-- Logo -->
+        <a href="/" class="flex items-center flex-shrink-0" aria-label="Ir a la página principal de Loopi">
+            <img src="../img/LOGO.png" class="w-48 h-auto" alt="Loopi Logo" />
+        </a>
 
-      <!-- Navegación del footer -->
-      <nav aria-label="Footer Navigation"
-        class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-4 text-xs font-medium text-gray-200">
-        <div>
-          <h2 class="mb-2 text-xs font-semibold uppercase text-white">Recursos</h2>
-          <ul class="space-y-1">
-            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/"
-                class="hover:underline hover:text-blue-400">JavaScript</a></li>
-            <li><a href="https://tailwindcss.com/" class="hover:underline hover:text-blue-400">Tailwind CSS</a></li>
-            <li><a href="https://www.npmjs.com/package/json-server"
-                class="hover:underline hover:text-blue-400">Json-Server</a></li>
-          </ul>
-        </div>
+        <!-- Navegación del footer -->
+        <nav aria-label="Footer Navigation"
+            class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 text-xs font-medium text-gray-200">
+            <div>
+                <h2 class="mb-1 text-xs font-semibold uppercase text-white">Recursos</h2>
+                <ul class="space-y-0.5">
+                    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/"
+                        class="hover:underline hover:text-blue-400">JavaScript</a></li>
+                    <li><a href="https://tailwindcss.com/" class="hover:underline hover:text-blue-400">Tailwind CSS</a></li>
+                    <li><a href="https://www.npmjs.com/package/json-server"
+                        class="hover:underline hover:text-blue-400">Json-Server</a></li>
+                </ul>
+            </div>
 
-        <div>
-          <h2 class="mb-2 text-xs font-semibold uppercase text-white">Empresa</h2>
-          <ul class="space-y-1">
-            <li><a href="footer_quienes-somos.html" class="hover:underline hover:text-blue-400">Quiénes somos</a></li>
-            <li><a href="footer_trabaja-con-nosotros.html" class="hover:underline hover:text-blue-400">Trabaja con nosotros</a></li>
-          </ul>
-        </div>
+            <div>
+                <h2 class="mb-1 text-xs font-semibold uppercase text-white">Empresa</h2>
+                <ul class="space-y-0.5">
+                    <li><a href="footer_quienes-somos.html" target="_blank" class="hover:underline hover:text-blue-400">Quiénes somos</a></li>
+                    <li><a href="footer_trabaja-con-nosotros.html" target="_blank" class="hover:underline hover:text-blue-400">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
 
-        <div>
-          <h2 class="mb-2 text-xs font-semibold uppercase text-white">Soporte</h2>
-          <ul class="space-y-1">
-            <li>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=loopi@support.com" target="_blank"
-                class="hover:underline hover:text-blue-400">
-                Contacto
-              </a>
-            </li>
+            <div>
+                <h2 class="mb-1 text-xs font-semibold uppercase text-white">Soporte</h2>
+                <ul class="space-y-0.5">
+                    <li>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=loopi@support.com" target="_blank"
+                            class="hover:underline hover:text-blue-400">
+                            Contacto
+                        </a>
+                    </li>
+                    <li><a href="https://github.com/jemb4/loopi" target="_blank"
+                        class="hover:underline hover:text-blue-400">GitHub</a></li>
+                </ul>
+            </div>
 
-            <li><a href="https://github.com/jemb4/loopi" target="_blank"
-                class="hover:underline hover:text-blue-400">GitHub</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="mb-2 text-xs font-semibold uppercase text-white">Legal</h2>
-          <ul class="space-y-1">
-            <li><a href="footer_politica-privacidad.html" target="_blank"
-                class="hover:underline hover:text-blue-400">Política de privacidad</a></li>
-            <li><a href="footer_terminos-condiciones.html" target="_blank"
-                class="hover:underline hover:text-blue-400">Términos y condiciones</a></li>
-          </ul>
-        </div>
-      </nav>
+            <div>
+                <h2 class="mb-1 text-xs font-semibold uppercase text-white">Legal</h2>
+                <ul class="space-y-0.5">
+                    <li><a href="footer_politica-privacidad.html" target="_blank"
+                        class="hover:underline hover:text-blue-400">Política de privacidad</a></li>
+                    <li><a href="footer_terminos-condiciones.html" target="_blank"
+                        class="hover:underline hover:text-blue-400">Términos y condiciones</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
-    <hr class="my-2 border-gray-200 opacity-20" />
+    <hr class="border-gray-200 opacity-20" />
 
-    <div class="flex flex-col sm:flex-row sm:justify-center sm:items-center text-center text-gray-200 text-xs pb-4">
-      <span>© <span id="year"></span> <a href="/" class="hover:underline">Loopi™</a>. Todos los derechos
-        reservados.</span>
+    <div class="flex flex-col sm:flex-row sm:justify-center sm:items-center text-center text-gray-200 text-xs py-2">
+        <span>© <span id="year">2024</span> <a href="/" class="hover:underline">Loopi™</a>. Todos los derechos reservados.</span>
     </div>
-  </footer>
+</footer>
 
    <script>
     document.getElementById('year').textContent = new Date().getFullYear();
