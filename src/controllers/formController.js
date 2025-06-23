@@ -17,11 +17,9 @@ form.addEventListener('submit', async (e) => {
     description: document.getElementById('description').value
   }
 
-  console.log(data);
-
   try {
-    await ProductServices.crearProducto(data);
-    window.location.href = 'index.html';
+    await ProductServices.postProduct(data);
+    window.location.href = '/index.html';
 
   } catch (error) {
     console.error('Error al crear el producto', error);

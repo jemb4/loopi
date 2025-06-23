@@ -88,6 +88,46 @@
       "cover_path": "https://placehold.co/350x500.png",
       "pdf_path": "./src/static/pdf/El-mandangon-de-Lorena",
       "id": "3515"
+    },
+    {
+      "id": "3061",
+      "title": "Prueba",
+      "category": "Smartphone",
+      "price": 20,
+      "image": "https://www.mdvacationclub.com/wp-content/uploads/2018/12/Placeholder.png",
+      "condition": "Nueva",
+      "year": 2020,
+      "description": "Nueva"
+    },
+    {
+      "id": "086e",
+      "title": "prueba2",
+      "category": "Smartphone",
+      "price": 4,
+      "image": "https://www.mdvacationclub.com/wp-content/uploads/2018/12/Placeholder.png",
+      "condition": "5",
+      "year": 5,
+      "description": "5"
+    },
+    {
+      "id": "595b",
+      "title": "asd",
+      "category": "Smartphone",
+      "price": 22,
+      "image": "https://www.mdvacationclub.com/wp-content/uploads/2018/12/Placeholder.png",
+      "condition": "asd",
+      "year": 2323,
+      "description": "asddd"
+    },
+    {
+      "id": "4cdd",
+      "title": "prueba 3",
+      "category": "Smartphone",
+      "price": 399,
+      "image": "https://www.mdvacationclub.com/wp-content/uploads/2018/12/Placeholder.png",
+      "condition": "prueba 3",
+      "year": 3000,
+      "description": "prueba"
     }
   ]
 }
