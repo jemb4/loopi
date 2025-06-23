@@ -15,3 +15,22 @@ export class ProductServices {
     }
   }
 }
+
+
+//Milca_ Función Delete
+function deleteProduct(id) {
+  fetch(`http://localhost:3000/products/${id}`, {
+    method: 'DELETE'
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error al eliminar');
+      }
+
+      console.log(`Product with ID ${id} deleted successfully.`);
+    })
+    .catch(error => {
+      console.error('Error al eliminar producto:', error);
+    });
+}
+
