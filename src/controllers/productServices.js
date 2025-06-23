@@ -1,7 +1,6 @@
-import { ProductServices } from "../services/ProductServices.js";
+import { ProductServices } from "../services/productServices.js";
 
 const productController = async (id) => {
-  console.log('cualquier cosa')
   return await ProductServices.getSingleProduct(id);
 }
 
