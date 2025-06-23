@@ -18,19 +18,23 @@ export class ProductServices {
 
 
 //Milca_ Función Delete
-function deleteProduct(id) {
-  fetch(`http://localhost:3000/products/${id}`, {
-    method: 'DELETE'
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Error al eliminar');
-      }
+export class ProductServices {
+  static async deleteProduct(id) {
+    try {
+      const res = await fetch(`http://localhost:8000/products/${id}`, {
+        method: 'DELETE',
+      });
 
-      console.log(`Product with ID ${id} deleted successfully.`);
-    })
-    .catch(error => {
+      if (!res.ok) throw new Error('Error al eliminar producto');
+
+      console.log(`Producto con ID ${id} eliminado correctamente.`);
+      return true;
+    } catch (error) {
       console.error('Error al eliminar producto:', error);
-    });
+      throw error;
+    }
+  }
 }
+
+
 
