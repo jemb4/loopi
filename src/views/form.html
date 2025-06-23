@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #f6faff;
+      }
+      form {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <!-- Header -->
+    <!-- Formulario -->
+    <main class="flex-grow">
+      <form
+        class="max-w-2xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md space-y-6"
+        id="product-form"
+      >
+        <!-- Título -->
+        <div class="relative z-0 w-full group">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder=" "
+            required
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          />
+          <label
+            for="title"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Título</label
+          >
+        </div>
+
+        <!-- Categoría -->
+        <div>
+          <label
+            for="category"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Categoría</label
+          >
+          <select
+            id="category"
+            name="category"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+          >
+            <option>Smartphone</option>
+            <option>Tablet</option>
+          </select>
+        </div>
+
+        <!-- Precio -->
+        <div class="relative z-0 w-full group">
+          <input
+            type="number"
+            name="price"
+            id="price"
+            placeholder=" "
+            required
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          />
+          <label
+            for="price"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Precio</label
+          >
+        </div>
+
+        <!-- Imagen -->
+        <div>
+          <label
+            for="image"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Subir imagen</label
+          >
+          <input
+            id="image"
+            type="file"
+            name="image"
+            class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600"
+          />
+          <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">
+            Una imagen del producto ayuda a los compradores.
+          </p>
+        </div>
+
+        <!-- Condición -->
+        <div class="relative z-0 w-full group">
+          <input
+            type="text"
+            name="condition"
+            id="condition"
+            placeholder=" "
+            required
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          />
+          <label
+            for="condition"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Condición</label
+          >
+        </div>
+
+        <!-- Año -->
+        <div class="relative z-0 w-full group">
+          <input
+            type="number"
+            name="year"
+            id="year"
+            placeholder=" "
+            required
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+          />
+          <label
+            for="year"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Año</label
+          >
+        </div>
+
+        <!-- Descripción -->
+        <div>
+          <label
+            for="description"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            >Descripción</label
+          >
+          <textarea
+            id="description"
+            name="description"
+            rows="4"
+            required
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white dark:border-gray-600"
+          ></textarea>
+        </div>
+
+        <!-- Botón -->
+        <button
+          type="submit"
+          class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Enviar
+        </button>
+      </form>
+    </main>
+    <!-- Formulario -->
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-900 text-sm">
+      <div class="w-full max-w-full px-4 py-4 mx-auto">
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-start gap-6"
+        >
+          <div>
+            <a
+              href="https://flowbite.com/"
+              aria-label="Ir a la página principal de Loopi"
+              class="flex items-center"
+            >
+              <img
+                src="../img/LOGO.png"
+                class="w-24 h-auto me-2"
+                alt="Loopi Logo"
+              />
+            </a>
+          </div>
+
+          <nav
+            aria-label="Footer Navigation"
+            class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5 text-gray-500 dark:text-gray-400 font-medium"
+          >
+            <div>
+              <h2
+                class="mb-2 text-xs font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Resources
+              </h2>
+              <ul class="space-y-1">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/es/docs/Web/JavaScript/"
+                    target="_blank"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >JavaScript</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Tailwind CSS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.npmjs.com/package/json-server"
+                    target="_blank"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Json - Server</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2
+                class="mb-2 text-xs font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Follow us
+              </h2>
+              <ul class="space-y-1">
+                <li>
+                  <a
+                    href="https://github.com/jemb4/loopi"
+                    target="_blank"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Github</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2
+                class="mb-2 text-xs font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Legal
+              </h2>
+              <ul class="space-y-1">
+                <li>
+                  <a
+                    href="footer_politica-privacidad.html"
+                    target="_blank"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Política de privacidad</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="footer_terminos-condiciones.html"
+                    target="_blank"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Terminos y Condiciones</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2
+                class="mb-2 text-xs font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Empresa
+              </h2>
+              <ul class="space-y-1">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Sobre Loopi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Quiénes somos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Trabaja con nosotros</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h2
+                class="mb-2 text-xs font-semibold text-gray-900 uppercase dark:text-white"
+              >
+                Soporte
+              </h2>
+              <ul class="space-y-1">
+                <li>
+                  <a
+                    href="#"
+                    class="hover:underline hover:text-blue-600 dark:hover:text-blue-400"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <hr class="my-4 border-gray-200 dark:border-gray-700" />
+
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-gray-500 dark:text-gray-400"
+        >
+          <span
+            >© <span id="year"></span>
+            <a href="https://flowbite.com/" class="hover:underline">Loopi™</a>.
+            All Rights Reserved.</span
+          >
+          <a
+            href="https://github.com/jemb4/loopi"
+            target="_blank"
+            aria-label="GitHub de Loopi"
+            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+          >
+            <svg
+              class="w-4 h-4"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+    <!-- Footer -->
+    <script type="module" src="../controllers/formController.js"></script>
+  </body>
+</html>
