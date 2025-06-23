@@ -14,4 +14,13 @@ export class ProductServices {
       throw error;
     }
   }
+
+  static async postProduct(data) {
+    await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    alert(`Añadido ${data.title} con éxito`)
+  }
 }
