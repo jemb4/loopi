@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>loopi footer</title>
+  <title>Loopi - Trabaja con nosotros</title>
   <script src="https://cdn.tailwindcss.com"></script>
-   <link rel="icon" href="../img/LOGO.png">
+   <link rel="icon" href="../img/LOGO.png" />
 </head>
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen font-sans">
 
-<body>
+  <!-- Main Content -->
+  <main class="flex-grow px-6 py-10">
+    <div class="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-8 border border-gray-200">
+      <h1 class="text-4xl font-extrabold text-blue-600 mb-6 text-center">💼 Únete a Loopi</h1>
+      <p class="text-center mb-8 text-gray-600">Estamos buscando talento como tú. Rellena el formulario y nos pondremos en contacto.</p>
 
+      <form action="#" method="POST" class="space-y-6">
+        <!-- Nombre -->
+        <div>
+          <label for="nombre" class="block mb-2 font-medium text-gray-700">Nombre completo *</label>
+          <input id="nombre" name="nombre" type="text" required
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tu nombre completo">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="block mb-2 font-medium text-gray-700">Correo electrónico *</label>
+          <input id="email" name="email" type="email" required
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="tuemail@ejemplo.com">
+        </div>
+
+        <!-- Teléfono -->
+        <div>
+          <label for="telefono" class="block mb-2 font-medium text-gray-700">Teléfono</label>
+          <input id="telefono" name="telefono" type="tel"
+                 class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tu número de contacto">
+        </div>
+
+        <!-- Mensaje o perfil -->
+        <div>
+          <label for="mensaje" class="block mb-2 font-medium text-gray-700">¿Qué podrías aportar a Loopi? *</label>
+          <textarea id="mensaje" name="mensaje" required rows="5"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Cuéntanos un poco sobre tu perfil, experiencia o habilidades."></textarea>
+        </div>
+
+        <!-- CV -->
+        <div>
+          <label for="cv" class="block mb-2 font-medium text-gray-700">Adjunta tu CV (PDF, max 2MB)</label>
+          <input id="cv" name="cv" type="file" accept=".pdf"
+                 class="w-full border border-gray-300 rounded-lg p-3 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+
+        <!-- Botón enviar -->
+        <div class="text-center">
+          <button type="submit"
+                  class="bg-blue-600 text-white font-medium px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-400">
+            Enviar candidatura
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
 <footer class="bg-[#003c85] text-white text-sm">
     <div class="w-full max-w-7xl mx-auto px-4 py-2 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
         <!-- Logo -->
@@ -73,10 +124,10 @@
     </div>
 </footer>
 
-   <script>
+  <!-- Año dinámico -->
+  <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
 </body>
-
 </html>
