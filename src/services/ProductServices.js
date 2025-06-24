@@ -1,6 +1,7 @@
 import { API_URL } from "./port.js";
 
 export class ProductServices {
+
   static async getSingleProduct(id) {
     try {
       const res = await fetch(`${API_URL}/${id}`);
@@ -14,11 +15,7 @@ export class ProductServices {
       throw error;
     }
   }
-}
 
-
-//Milca_ Función Delete
-export class ProductServices {
   static async deleteProduct(id) {
     try {
       const res = await fetch(`http://localhost:8000/products/${id}`, {
@@ -35,6 +32,3 @@ export class ProductServices {
     }
   }
 }
-
-
-
