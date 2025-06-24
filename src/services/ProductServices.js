@@ -16,6 +16,15 @@ export class ProductServices {
     }
   }
 
+  static async postProduct(data) {
+    await fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+    alert(`Añadido ${data.title} con éxito`)
+  }
+
   static async deleteProduct(id) {
     try {
       const res = await fetch(`http://localhost:8000/products/${id}`, {

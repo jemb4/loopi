@@ -76,7 +76,6 @@
     </div>
   </main>
 
-
 <!-- Modal lateral de categorías -->
 <div id="modal-categorias" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
   <div class="w-64 h-full bg-white p-4 shadow-lg overflow-y-auto absolute left-0 top-0">
@@ -92,8 +91,6 @@
     </ul>
   </div>
 </div>
-
-
 
 
   <!-- Footer -->
@@ -156,12 +153,12 @@
   </footer>
 
   <!-- Scripts -->
-  <script type="module" src="/src/controllers/productServices.js"></script>
+  <script type="module" src="/src/services/ProductServices.js"></script>
   <script src="/src/utils/hamburguer-btn.js"></script>
   <script src="/src/utils/buscador.js"></script>
-  <script src="main.js"></script>
-  <script src="src/utils/categorias.js"></script>
-  <script src="src/utils/modal-categorias.js"></script>
+  <script src="/main.js"></script>  
+  <script src="/src/utils/categorias.js"></script>
+  <script src="/src/utils/modal-categorias.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
