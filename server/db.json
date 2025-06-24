@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "title": "iPhone 12 Reacondicionado",
       "category": "mobiles",
       "price": 350,
@@ -12,7 +12,7 @@
       "rating": 3.5
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Samsung Galaxy S20",
       "category": "mobiles",
       "price": 320,
@@ -23,7 +23,7 @@
       "rating": 2.4
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Google Pixel 5",
       "category": "mobiles",
       "price": 300,
@@ -34,7 +34,7 @@
       "rating": 3.3
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "OnePlus 8T",
       "category": "mobiles",
       "price": 280,
@@ -45,7 +45,7 @@
       "rating": 4.4
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Xiaomi Mi 11 Lite",
       "category": "mobiles",
       "price": 220,
@@ -56,7 +56,7 @@
       "rating": 4.9
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Sony Xperia 10 II",
       "category": "mobiles",
       "price": 210,
@@ -65,9 +65,10 @@
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 5.0
+
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Motorola Moto G Power",
       "category": "mobiles",
       "price": 150,
@@ -78,7 +79,7 @@
       "rating": 1.1
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Huawei P30 Pro",
       "category": "mobiles",
       "price": 250,
@@ -89,7 +90,7 @@
       "rating": 3.3
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Nokia 7.2",
       "category": "mobiles",
       "price": 180,
@@ -97,10 +98,10 @@
       "image": "https://example.com/images/nokia72.jpg",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 2.0
+      "rating": 4.0
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "LG Velvet",
       "category": "mobiles",
       "price": 200,
@@ -111,7 +112,7 @@
       "rating": 3.1
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Asus ROG Phone 3",
       "category": "mobiles",
       "price": 400,
@@ -122,7 +123,7 @@
       "rating": 4.6
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Realme 7 Pro",
       "category": "mobiles",
       "price": 170,
@@ -132,9 +133,8 @@
       "year": 2020,
       "rating": 4.8
     },
-
     {
-      "id": 13,
+      "id": "13",
       "title": "MacBook Air M1",
       "category": "laptops",
       "price": 950,
@@ -145,7 +145,7 @@
       "rating": 4.8
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Dell XPS 13",
       "category": "laptops",
       "price": 850,
@@ -156,7 +156,7 @@
       "rating": 4.6
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "HP Spectre x360",
       "category": "laptops",
       "price": 900,
@@ -167,7 +167,7 @@
       "rating": 1.5
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Lenovo ThinkPad X1 Carbon",
       "category": "laptops",
       "price": 1000,
@@ -178,7 +178,7 @@
       "rating": 2.7
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Asus ZenBook 14",
       "category": "laptops",
       "price": 750,
@@ -189,7 +189,7 @@
       "rating": 3.4
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Microsoft Surface Laptop 3",
       "category": "laptops",
       "price": 880,
@@ -200,7 +200,7 @@
       "rating": 4.5
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "Acer Swift 3",
       "category": "laptops",
       "price": 670,
@@ -211,7 +211,7 @@
       "rating": 4.3
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Razer Blade 15",
       "category": "laptops",
       "price": 1300,
@@ -222,7 +222,7 @@
       "rating": 4.7
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "HP EliteBook 840",
       "category": "laptops",
       "price": 780,
@@ -233,7 +233,7 @@
       "rating": 4.4
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Dell Inspiron 15",
       "category": "laptops",
       "price": 600,
@@ -244,7 +244,7 @@
       "rating": 4.2
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Apple MacBook Pro 13",
       "category": "laptops",
       "price": 1200,
@@ -255,7 +255,7 @@
       "rating": 4.7
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Lenovo Yoga C940",
       "category": "laptops",
       "price": 950,
@@ -265,9 +265,8 @@
       "year": 2020,
       "rating": 4.5
     },
-
     {
-      "id": 25,
+      "id": "25",
       "title": "Apple Watch Series 6",
       "category": "smartwatches",
       "price": 300,
@@ -278,7 +277,7 @@
       "rating": 4.7
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Samsung Galaxy Watch 4",
       "category": "smartwatches",
       "price": 250,
@@ -289,7 +288,7 @@
       "rating": 4.6
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Fitbit Versa 3",
       "category": "smartwatches",
       "price": 150,
@@ -300,7 +299,7 @@
       "rating": 4.3
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Garmin Venu",
       "category": "smartwatches",
       "price": 220,
@@ -311,7 +310,7 @@
       "rating": 4.5
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Huawei Watch GT 2",
       "category": "smartwatches",
       "price": 130,
@@ -322,7 +321,7 @@
       "rating": 4.2
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Amazfit GTS 2",
       "category": "smartwatches",
       "price": 140,
@@ -333,7 +332,7 @@
       "rating": 4.1
     },
     {
-      "id": 31,
+      "id": "31",
       "title": "Fossil Gen 5",
       "category": "smartwatches",
       "price": 160,
@@ -344,7 +343,7 @@
       "rating": 4.2
     },
     {
-      "id": 32,
+      "id": "32",
       "title": "TicWatch Pro 3",
       "category": "smartwatches",
       "price": 200,
@@ -355,7 +354,7 @@
       "rating": 4.3
     },
     {
-      "id": 33,
+      "id": "33",
       "title": "Withings Steel HR",
       "category": "smartwatches",
       "price": 130,
@@ -363,10 +362,10 @@
       "image": "https://example.com/images/withingssteelhr.jpg",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 4.0
+      "rating": 4
     },
     {
-      "id": 34,
+      "id": "34",
       "title": "Samsung Galaxy Watch Active 2",
       "category": "smartwatches",
       "price": 180,
@@ -377,7 +376,7 @@
       "rating": 4.4
     },
     {
-      "id": 35,
+      "id": "35",
       "title": "Garmin Forerunner 245",
       "category": "smartwatches",
       "price": 210,
@@ -388,7 +387,7 @@
       "rating": 4.5
     },
     {
-      "id": 36,
+      "id": "36",
       "title": "Skagen Falster 3",
       "category": "smartwatches",
       "price": 170,
@@ -398,9 +397,8 @@
       "year": 2020,
       "rating": 4.1
     },
-
     {
-      "id": 37,
+      "id": "37",
       "title": "Dell UltraSharp U2723QE",
       "category": "monitors",
       "price": 470,
@@ -411,7 +409,7 @@
       "rating": 4.7
     },
     {
-      "id": 38,
+      "id": "38",
       "title": "LG 27GN950-B",
       "category": "monitors",
       "price": 600,
@@ -422,7 +420,7 @@
       "rating": 4.8
     },
     {
-      "id": 39,
+      "id": "39",
       "title": "Samsung Odyssey G7",
       "category": "monitors",
       "price": 550,
@@ -433,7 +431,7 @@
       "rating": 4.7
     },
     {
-      "id": 40,
+      "id": "40",
       "title": "ASUS ProArt PA278QV",
       "category": "monitors",
       "price": 400,
@@ -444,7 +442,7 @@
       "rating": 4.6
     },
     {
-      "id": 41,
+      "id": "41",
       "title": "BenQ EX3501R",
       "category": "monitors",
       "price": 430,
@@ -455,7 +453,7 @@
       "rating": 4.5
     },
     {
-      "id": 42,
+      "id": "42",
       "title": "Acer Predator XB271HU",
       "category": "monitors",
       "price": 500,
@@ -466,7 +464,7 @@
       "rating": 4.6
     },
     {
-      "id": 43,
+      "id": "43",
       "title": "ViewSonic VX3276",
       "category": "monitors",
       "price": 320,
@@ -477,7 +475,7 @@
       "rating": 4.3
     },
     {
-      "id": 44,
+      "id": "44",
       "title": "Eizo EV2785",
       "category": "monitors",
       "price": 650,
@@ -488,7 +486,7 @@
       "rating": 4.8
     },
     {
-      "id": 45,
+      "id": "45",
       "title": "HP Z27",
       "category": "monitors",
       "price": 350,
@@ -499,7 +497,7 @@
       "rating": 4.2
     },
     {
-      "id": 46,
+      "id": "46",
       "title": "LG 34WN80C-B",
       "category": "monitors",
       "price": 600,
@@ -510,7 +508,7 @@
       "rating": 4.5
     },
     {
-      "id": 47,
+      "id": "47",
       "title": "Dell P2419H",
       "category": "monitors",
       "price": 250,
@@ -663,5 +661,5 @@
     "year": 2021,
     "rating": 3.5
   }
-  ]
+]
 }
