@@ -530,6 +530,138 @@
       "condition": "reacondicionado",
       "year": 2018,
       "rating": 4.1
-    }
+    },
+     {
+    "id": 49,
+    "title": "iPad Air 4ª Gen",
+    "category": "tablets",
+    "price": 450,
+    "description": "iPad Air de 10.9 pulgadas, chip A14 Bionic, 64GB.",
+    "image": "/server/img/ipad-air4.webp",
+    "condition": "reacondicionado",
+    "year": 2020,
+    "rating": 3.2
+  },
+  {
+    "id": 50,
+    "title": "Samsung Galaxy Tab S7",
+    "category": "tablets",
+    "price": 400,
+    "description": "Tablet Samsung con pantalla de 11 pulgadas y 128GB.",
+    "image": "/server/img/galaxy-tab-s7.webp",
+    "condition": "reacondicionado",
+    "year": 2020,
+    "rating": 4.4
+  },
+  {
+    "id": 51,
+    "title": "Lenovo Tab P11 Pro",
+    "category": "tablets",
+    "price": 330,
+    "description": "Lenovo Tab con pantalla OLED de 11.5 pulgadas y 128GB.",
+    "image": "/server/img/lenovo-p11-pro.webp",
+    "condition": "reacondicionado",
+    "year": 2021,
+    "rating": 5.0
+  },
+  {
+    "id": 52,
+    "title": "Huawei MatePad 11",
+    "category": "tablets",
+    "price": 300,
+    "description": "Huawei MatePad con pantalla de 10.95'' y 128GB.",
+    "image": "/server/img/matepad11.webp",
+    "condition": "reacondicionado",
+    "year": 2021,
+    "rating": 2.3
+  },
+  {
+    "id": 53,
+    "title": "Microsoft Surface Go 2",
+    "category": "tablets",
+    "price": 350,
+    "description": "Surface Go 2 con pantalla de 10.5 pulgadas y 64GB.",
+    "image": "/server/img/surface-go2.webp",
+    "condition": "reacondicionado",
+    "year": 2020,
+    "rating": 1.1
+  },
+  {
+    "id": 54,
+    "title": "iPad 8ª Gen",
+    "category": "tablets",
+    "price": 320,
+    "description": "iPad 10.2 pulgadas con chip A12 Bionic y 32GB.",
+    "image": "/server/img/ipad8gen.webp",
+    "condition": "reacondicionado",
+    "year": 2020,
+    "rating": 3.5
+  },
+  {
+    "id": 55,
+    "title": "Samsung Galaxy Tab A7",
+    "category": "tablets",
+    "price": 200,
+    "description": "Galaxy Tab A7 con pantalla de 10.4 pulgadas y 64GB.",
+    "image": "/server/img/tab-a7.webp",
+    "condition": "reacondicionado",
+    "year": 2020,
+    "rating": 4.0
+  },
+  {
+    "id": 56,
+    "title": "Xiaomi Pad 5",
+    "category": "tablets",
+    "price": 370,
+    "description": "Xiaomi Pad 5 con pantalla 120Hz de 11 pulgadas y 128GB.",
+    "image": "/server/img/xiaomi-pad5.webp",
+    "condition": "reacondicionado",
+    "year": 2021,
+    "rating": 4.5
+  },
+  {
+    "id": 57,
+    "title": "Amazon Fire HD 10",
+    "category": "tablets",
+    "price": 150,
+    "description": "Tablet Fire HD 10 con 64GB y pantalla Full HD.",
+    "image": "/server/img/fire-hd10.webp",
+    "condition": "reacondicionado",
+    "year": 2021,
+    "rating": 3.0
+  },
+  {
+    "id": 58,
+    "title": "Teclast T40 Pro",
+    "category": "tablets",
+    "price": 210,
+    "description": "Tablet Android 11 con pantalla de 10.4 pulgadas.",
+    "image": "/server/img/teclast-t40.webp",
+    "condition": "reacondicionado",
+    "year": 2022,
+    "rating": 5.0
+  },
+  {
+    "id": 59,
+    "title": "iPad Mini 5ª Gen",
+    "category": "tablets",
+    "price": 280,
+    "description": "iPad Mini de 7.9 pulgadas con chip A12 y 64GB.",
+    "image": "/server/img/ipad-mini5.webp",
+    "condition": "reacondicionado",
+    "year": 2019,
+    "rating": 1.0
+  },
+  {
+    "id": 60,
+    "title": "Chuwi Hi10 X",
+    "category": "tablets",
+    "price": 250,
+    "description": "Tablet 2 en 1 con Windows 10 y pantalla Full HD.",
+    "image": "/server/img/chuwi-hi10x.webp",
+    "condition": "reacondicionado",
+    "year": 2021,
+    "rating": 3.5
+  }
   ]
 }
