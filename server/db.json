@@ -9,7 +9,7 @@
       "image": "/server/img/iphone12.webp",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.5
+      "rating": 3.5
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=400&h=400&fit=crop",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.4
+      "rating": 2.4
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       "image": "https://example.com/images/pixel5.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.3
+      "rating": 3.3
     },
     {
       "id": 4,
@@ -53,7 +53,7 @@
       "image": "https://example.com/images/mi11lite.jpg",
       "condition": "reacondicionado",
       "year": 2021,
-      "rating": 4.2
+      "rating": 4.9
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
       "image": "https://example.com/images/xperia10ii.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.0
+      "rating": 5.0
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
       "image": "https://example.com/images/motogpower.jpg",
       "condition": "reacondicionado",
       "year": 2021,
-      "rating": 4.1
+      "rating": 1.1
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
       "image": "https://example.com/images/p30pro.jpg",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 4.3
+      "rating": 3.3
     },
     {
       "id": 9,
@@ -97,7 +97,7 @@
       "image": "https://example.com/images/nokia72.jpg",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 4.0
+      "rating": 2.0
     },
     {
       "id": 10,
@@ -108,7 +108,7 @@
       "image": "https://example.com/images/lgvelvet.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.1
+      "rating": 3.1
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@
       "image": "https://example.com/images/realme7pro.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.2
+      "rating": 4.8
     },
 
     {
@@ -164,7 +164,7 @@
       "image": "https://example.com/images/hpspectre.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.5
+      "rating": 1.5
     },
     {
       "id": 16,
@@ -175,7 +175,7 @@
       "image": "https://example.com/images/thinkpadx1.jpg",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 4.7
+      "rating": 2.7
     },
     {
       "id": 17,
@@ -186,7 +186,7 @@
       "image": "https://example.com/images/zenbook14.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.4
+      "rating": 3.4
     },
     {
       "id": 18,
