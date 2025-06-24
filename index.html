@@ -54,7 +54,7 @@
 
         <!-- Menú enlaces -->
         <div id="menu" class="hidden lg:flex space-x-6">
-          <a href="#">Todas las categorías</a>
+          <a href="#" id="abrir-categorias">Todas las categorías</a>
           <a href="/src/components/categorias.html?categoria=mobiles">Móviles</a>
           <a href="/src/components/categorias.html?categoria=tablets">Tablets</a>
           <a href="/src/components/categorias.html?categoria=laptops">Laptops</a>
@@ -77,6 +77,21 @@
   </main>
 
 
+<!-- Modal lateral de categorías -->
+<div id="modal-categorias" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
+  <div class="w-64 h-full bg-white p-4 shadow-lg overflow-y-auto absolute left-0 top-0">
+    <button id="cerrar-categorias" class="text-gray-600 hover:text-red-500 text-xl float-right">&times;</button>
+    <h2 class="text-lg font-semibold mb-4">Categorías</h2>
+    <ul class="space-y-2">
+      <li><a href="/src/components/categorias.html?categoria=mobiles" class="text-blue-600 hover:underline">Móviles</a></li>
+      <li><a href="/src/components/categorias.html?categoria=tablets" class="text-blue-600 hover:underline">Tablets</a></li>
+      <li><a href="/src/components/categorias.html?categoria=laptops" class="text-blue-600 hover:underline">Laptops</a></li>
+      <li><a href="/src/components/categorias.html?categoria=smartwatches" class="text-blue-600 hover:underline">Smartwatches</a></li>
+      <li><a href="/src/components/categorias.html?categoria=monitors" class="text-blue-600 hover:underline">Monitores</a></li>
+      <!-- Añade más si quieres -->
+    </ul>
+  </div>
+</div>
 
 
 
@@ -146,6 +161,7 @@
   <script src="/src/utils/buscador.js"></script>
   <script src="main.js"></script>
   <script src="src/utils/categorias.js"></script>
+  <script src="src/utils/modal-categorias.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
