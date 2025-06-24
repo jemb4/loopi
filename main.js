@@ -99,5 +99,3 @@ function renderStars(rating) {
 
   return fullStar.repeat(full) + (hasHalf ? halfStar : '') + emptyStar.repeat(empty);
 }
-
-
