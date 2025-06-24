@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     categorias.forEach(categoria => {
       const productosCategoria = productos
         .filter(p => p.category === categoria)
-        .slice(0, 8); // Solo los primeros 8
+        .slice(0, 8); // Solo los primeros 8    
 
       // Crear sección de categoría
       let html = `
