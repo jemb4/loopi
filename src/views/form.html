@@ -4,73 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crear Producto</title>
-    <link rel="stylesheet" href="/src/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-
-    </style>
+    <style></style>
   </head>
   <body class="flex flex-col min-h-screen">
     <!-- Header -->
     <header class="bg-gray-100 shadow-md">
-        <div class="w-full max-w-full px-4 py-2 mx-auto flex items-center justify-between">
-    <!-- Logo + Buscador -->
-            <div class="flex items-center">
-                <a href="/" class="flex items-center" aria-label="Ir a la página principal de Loopi">
-                    <img src="/src/img/LOGO.png" alt="Loopi Logo" class="w-32 h-auto me-2 align-middle" />
-                </a>
-                <!--Contenedor del input-->
-                <div class="relative ml-4">
-                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <img src="/src/img/icons8-búsqueda.svg" alt="Buscar" class="w-5 h-5 text-gray-500" />
-                    </div>
-                    <input type="text" placeholder="Buscar productos..." class="pl-10 pr-4 py-2 w-96 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                </div>
-                
-            </div>
-
-    <!-- Botón Vender -->
-            <div>
-                 <a href="/src/views/form.html">
-                <button type="button" class="px-6 py-3.5 text-base font-medium text-white inline-flex items-center bg-[#1f70db] hover:bg-[#2f80ed] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-800 dark:focus:ring-blue-800">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a2.25 2.25 0 0 0-2.25-2.25H15a3 3 0 1 1-6 0H5.25A2.25 2.25 0 0 0 3 12m18  0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18 0a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 9m18     0V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"/></svg>VENDER</button>
-                </a>
-            </div>
+      <div
+        class="max-w-7xl px-4 py-2 mx-auto flex items-center justify-between"
+      >
+        <!-- Logo + Search -->
+        <div class="flex items-center gap-4">
+          <a href="/" aria-label="Ir a la página principal de Loopi">
+            <img src="/src/img/LOGO.png" alt="Loopi Logo" class="w-32 h-auto" />
+          </a>
+          <div class="relative">
+            <span
+              class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+            >
+              <img
+                src="/src/img/icons8-búsqueda.svg"
+                alt="Buscar"
+                class="w-5 h-5"
+              />
+            </span>
+            <input
+              type="text"
+              placeholder="Buscar productos..."
+              class="pl-10 pr-4 py-2 w-96 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
         </div>
 
-        <!--Segunda barra Nav-->
-            
-            <div>
-                <nav class="bg-[#003c85] text-white"> <!--Cambiar color de Efrén-->
-    <div class="w-full px-4 py-2 flex items-center justify-between">
+        <!-- Botón Vender -->
+        <a href="/src/views/form.html">
+          <button
+            type="button"
+            class="px-6 py-3.5 text-base font-medium text-white inline-flex items-center bg-[#1f70db] hover:bg-[#2f80ed] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 12H3m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18-3a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"
+              />
+            </svg>
+            VENDER
+          </button>
+        </a>
+      </div>
 
-        <!--Menú hamburguesa-->
-        <div class="lg:hidden">
-            <button id="menu-toggle">
-                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
-    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-            </button>
+      <!-- Segunda barra de navegación -->
+      <nav class="bg-[#003c85] text-white">
+        <div class="max-w-7xl px-4 py-2 flex justify-between items-center">
+          <!-- Menú hamburguesa -->
+          <button id="menu-toggle" class="lg:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Menú enlaces -->
+          <div id="menu" class="hidden lg:flex space-x-6">
+            <a href="#" id="abrir-categorias">Todas las categorías</a>
+            <a href="/src/components/categorias.html?categoria=mobiles"
+              >Móviles</a
+            >
+            <a href="/src/components/categorias.html?categoria=tablets"
+              >Tablets</a
+            >
+            <a href="/src/components/categorias.html?categoria=laptops"
+              >Laptops</a
+            >
+          </div>
+
+          <!-- Icono carrito -->
+          <a href="#" class="text-2xl">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
         </div>
-
-        <div id="menu" class="hidden flex-col lg:flex lg:flex-row lg:items-center lg:space-x-8 ml-4">     
-            <a href="#" class="mr-4">Todas las categorías</a>
-            <a href="#" class="mr-4">Móviles</a>
-            <a href="#" class="mr-4">Tablets</a>
-            <a href="#" class="mr-4">Laptops</a>
-        </div>
-
-        <!--Carrito-->
-        <div>
-            <a href="#" class="mr-6 text-2xl">
-                
-                <i class="fa-solid fa-cart-shopping"></i>
-            </a>
-            </div>
+      </nav>
     </header>
     <!-- Header -->
     <!-- Formulario -->
@@ -210,67 +244,140 @@
     </main>
     <!-- Formulario -->
     <!-- Footer -->
-<footer class="bg-[#003c85] text-white text-sm">
-    <div class="w-full max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
+    <footer class="bg-[#003c85] text-white text-sm">
+      <div
+        class="w-full max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row md:justify-between md:items-center gap-4"
+      >
         <!-- Logo -->
-        <a href="/" class="flex items-center flex-shrink-0" aria-label="Ir a la página principal de Loopi">
-            <img src="../img/LOGO.png" class="w-40 h-auto" alt="Loopi Logo" />
+        <a
+          href="/"
+          class="flex items-center flex-shrink-0"
+          aria-label="Ir a la página principal de Loopi"
+        >
+          <img src="../img/LOGO.png" class="w-40 h-auto" alt="Loopi Logo" />
         </a>
 
         <!-- Navegación del footer -->
-        <nav aria-label="Footer Navigation"
-            class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 text-xs font-medium text-gray-200">
-            <div>
-                <h2 class="mb-1 text-xs font-semibold uppercase text-white">Recursos</h2>
-                <ul class="space-y-0.5">
-                    <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/"
-                        class="hover:underline hover:text-blue-400">JavaScript</a></li>
-                    <li><a href="https://tailwindcss.com/" class="hover:underline hover:text-blue-400">Tailwind CSS</a></li>
-                    <li><a href="https://www.npmjs.com/package/json-server"
-                        class="hover:underline hover:text-blue-400">Json-Server</a></li>
-                </ul>
-            </div>
+        <nav
+          aria-label="Footer Navigation"
+          class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 text-xs font-medium text-gray-200"
+        >
+          <div>
+            <h2 class="mb-1 text-xs font-semibold uppercase text-white">
+              Recursos
+            </h2>
+            <ul class="space-y-0.5">
+              <li>
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/JavaScript/"
+                  class="hover:underline hover:text-blue-400"
+                  >JavaScript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://tailwindcss.com/"
+                  class="hover:underline hover:text-blue-400"
+                  >Tailwind CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.npmjs.com/package/json-server"
+                  class="hover:underline hover:text-blue-400"
+                  >Json-Server</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <div>
-                <h2 class="mb-1 text-xs font-semibold uppercase text-white">Empresa</h2>
-                <ul class="space-y-0.5">
-                    <li><a href="footer_quienes-somos.html" target="_blank" class="hover:underline hover:text-blue-400">Quiénes somos</a></li>
-                    <li><a href="footer_trabaja-con-nosotros.html" target="_blank" class="hover:underline hover:text-blue-400">Trabaja con nosotros</a></li>
-                </ul>
-            </div>
+          <div>
+            <h2 class="mb-1 text-xs font-semibold uppercase text-white">
+              Empresa
+            </h2>
+            <ul class="space-y-0.5">
+              <li>
+                <a
+                  href="footer_quienes-somos.html"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Quiénes somos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="footer_trabaja-con-nosotros.html"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Trabaja con nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <div>
-                <h2 class="mb-1 text-xs font-semibold uppercase text-white">Soporte</h2>
-                <ul class="space-y-0.5">
-                    <li>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=loopi@support.com" target="_blank"
-                            class="hover:underline hover:text-blue-400">
-                            Contacto
-                        </a>
-                    </li>
-                    <li><a href="https://github.com/jemb4/loopi" target="_blank"
-                        class="hover:underline hover:text-blue-400">GitHub</a></li>
-                </ul>
-            </div>
+          <div>
+            <h2 class="mb-1 text-xs font-semibold uppercase text-white">
+              Soporte
+            </h2>
+            <ul class="space-y-0.5">
+              <li>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=loopi@support.com"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                >
+                  Contacto
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jemb4/loopi"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
 
-            <div>
-                <h2 class="mb-1 text-xs font-semibold uppercase text-white">Legal</h2>
-                <ul class="space-y-0.5">
-                    <li><a href="footer_politica-privacidad.html" target="_blank"
-                        class="hover:underline hover:text-blue-400">Política de privacidad</a></li>
-                    <li><a href="footer_terminos-condiciones.html" target="_blank"
-                        class="hover:underline hover:text-blue-400">Términos y condiciones</a></li>
-                </ul>
-            </div>
+          <div>
+            <h2 class="mb-1 text-xs font-semibold uppercase text-white">
+              Legal
+            </h2>
+            <ul class="space-y-0.5">
+              <li>
+                <a
+                  href="footer_politica-privacidad.html"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Política de privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="footer_terminos-condiciones.html"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Términos y condiciones</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
-    </div>
+      </div>
 
-    <hr class="border-gray-200 opacity-20" />
+      <hr class="border-gray-200 opacity-20" />
 
-    <div class="flex flex-col sm:flex-row sm:justify-center sm:items-center text-center text-gray-200 text-xs py-2">
-        <span>© <span id="year">2024</span> <a href="/" class="hover:underline">Loopi™</a>. Todos los derechos reservados.</span>
-    </div>
-</footer>
+      <div
+        class="flex flex-col sm:flex-row sm:justify-center sm:items-center text-center text-gray-200 text-xs py-2"
+      >
+        <span
+          >© <span id="year">2024</span>
+          <a href="/" class="hover:underline">Loopi™</a>. Todos los derechos
+          reservados.</span
+        >
+      </div>
+    </footer>
     <!-- Footer -->
     <!-- Scripts -->
     <script type="module" src="../controllers/formController.js"></script>
