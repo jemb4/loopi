@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Loopi</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/YOUR_KIT_ID.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
 </head>
 
 <body class="flex flex-col min-h-screen">
@@ -43,7 +43,7 @@
     </div>
 
     <!-- Segunda barra de navegación -->
-    <nav class="bg-[#003c85] text-white">
+  <nav class="bg-[#003c85] text-white">
       <div class="max-w-7xl px-4 py-2 flex justify-between items-center">
         <!-- Menú hamburguesa -->
         <button id="menu-toggle" class="lg:hidden">
@@ -54,7 +54,10 @@
 
         <!-- Menú enlaces -->
         <div id="menu" class="hidden lg:flex space-x-6">
-          <a href="#" id="abrir-categorias">Todas las categorías</a>
+          <a href="#" id="abrir-categorias" class="flex items-center gap-2">
+            <i class="fa-solid fa-bars"></i>
+            Todas las categorías
+          </a>
           <a href="/src/components/categorias.html?categoria=mobiles">Móviles</a>
           <a href="/src/components/categorias.html?categoria=tablets">Tablets</a>
           <a href="/src/components/categorias.html?categoria=laptops">Laptops</a>
@@ -77,20 +80,54 @@
   </main>
 
 <!-- Modal lateral de categorías -->
-<div id="modal-categorias" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50">
-  <div class="w-64 h-full bg-white p-4 shadow-lg overflow-y-auto absolute left-0 top-0">
-    <button id="cerrar-categorias" class="text-gray-600 hover:text-red-500 text-xl float-right">&times;</button>
-    <h2 class="text-lg font-semibold mb-4">Categorías</h2>
-    <ul class="space-y-2">
-      <li><a href="/src/components/categorias.html?categoria=mobiles" class="text-blue-600 hover:underline">Móviles</a></li>
-      <li><a href="/src/components/categorias.html?categoria=tablets" class="text-blue-600 hover:underline">Tablets</a></li>
-      <li><a href="/src/components/categorias.html?categoria=laptops" class="text-blue-600 hover:underline">Laptops</a></li>
-      <li><a href="/src/components/categorias.html?categoria=smartwatches" class="text-blue-600 hover:underline">Smartwatches</a></li>
-      <li><a href="/src/components/categorias.html?categoria=monitors" class="text-blue-600 hover:underline">Monitores</a></li>
-      <!-- Añade más si quieres -->
+<div id="modal-categorias" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex">
+  <div class="w-72 h-full bg-white shadow-2xl p-6 rounded-r-xl relative animate-slide-in-left">
+    
+    <!-- Botón cerrar -->
+    <button id="cerrar-categorias" aria-label="Cerrar menú"
+      class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl transition-colors duration-200">
+      &times;
+    </button>
+
+    <!-- Título -->
+    <h2 class="text-xl font-semibold text-[#003c85] mb-6 border-b pb-2">Categorías</h2>
+
+    <!-- Lista de categorías -->
+    <ul class="space-y-4">
+      <li>
+        <a href="/src/components/categorias.html?categoria=mobiles"
+          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
+           Móviles
+        </a>
+      </li>
+      <li>
+        <a href="/src/components/categorias.html?categoria=tablets"
+          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
+           Tablets
+        </a>
+      </li>
+      <li>
+        <a href="/src/components/categorias.html?categoria=laptops"
+          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
+          Laptops
+        </a>
+      </li>
+      <li>
+        <a href="/src/components/categorias.html?categoria=smartwatches"
+          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
+          Smartwatches
+        </a>
+      </li>
+      <li>
+        <a href="/src/components/categorias.html?categoria=monitors"
+          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
+          Monitores
+        </a>
+      </li>
     </ul>
   </div>
 </div>
+
 
 
   <!-- Footer -->
