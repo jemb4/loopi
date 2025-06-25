@@ -169,6 +169,16 @@
       </div>
     </div>
 
+    <!-- Modal Producto: -->
+    <dialog
+      id="single-product"
+      class="rounded-lg p-6 max-w-3xl w-full bg-white shadow-lg border border-gray-300"
+    >
+      <i id="close-modal" class="fa-solid fa-xmark" style="float: right"></i>
+      <div id="product-modal-content"></div>
+    </dialog>
+    <!-- Modal Producto: -->
+
     <!-- Footer -->
     <footer class="bg-[#003c85] text-white text-sm">
       <div
@@ -289,10 +299,10 @@
     </footer>
 
     <!-- Scripts -->
-    <script type="module" src="/src/controllers/productServices.js"></script>
+    <script type="module" src="/src/services/ProductServices.js"></script>
     <script src="/src/utils/hamburguer-btn.js"></script>
     <script src="/src/utils/buscador.js"></script>
-    <script src="main.js"></script>
+    <script type="module" src="main-copy.js"></script>
     <script src="src/utils/categorias.js"></script>
     <script src="src/utils/modal-categorias.js"></script>
     <script>
