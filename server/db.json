@@ -6,10 +6,10 @@
       "category": "mobiles",
       "price": 350,
       "description": "iPhone 12 reacondicionado con pantalla OLED y 64GB.",
-      "image": "https://example.com/images/iphone12.jpg",
+      "image": "/server/img/iphone12.webp",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.5
+      "rating": 3.5
     },
     {
       "id": "2",
@@ -17,10 +17,10 @@
       "category": "mobiles",
       "price": 320,
       "description": "Samsung Galaxy S20 reacondicionado, 128GB, cámara triple.",
-      "image": "https://example.com/images/galaxy-s20.jpg",
+      "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=400&h=400&fit=crop",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.4
+      "rating": 2.4
     },
     {
       "id": "3",
@@ -31,7 +31,7 @@
       "image": "https://example.com/images/pixel5.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.3
+      "rating": 3.3
     },
     {
       "id": "4",
@@ -53,7 +53,7 @@
       "image": "https://example.com/images/mi11lite.jpg",
       "condition": "reacondicionado",
       "year": 2021,
-      "rating": 4.2
+      "rating": 4.9
     },
     {
       "id": "6",
@@ -64,7 +64,7 @@
       "image": "https://example.com/images/xperia10ii.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4
+      "rating": 4.0
     },
     {
       "id": "7",
@@ -75,7 +75,7 @@
       "image": "https://example.com/images/motogpower.jpg",
       "condition": "reacondicionado",
       "year": 2021,
-      "rating": 4.1
+      "rating": 1.1
     },
     {
       "id": "8",
@@ -86,7 +86,7 @@
       "image": "https://example.com/images/p30pro.jpg",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 4.3
+      "rating": 3.3
     },
     {
       "id": "9",
@@ -108,7 +108,7 @@
       "image": "https://example.com/images/lgvelvet.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.1
+      "rating": 3.1
     },
     {
       "id": "11",
@@ -130,7 +130,7 @@
       "image": "https://example.com/images/realme7pro.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.2
+      "rating": 4.8
     },
     {
       "id": "13",
@@ -138,7 +138,7 @@
       "category": "laptops",
       "price": 950,
       "description": "MacBook Air con chip M1, 8GB RAM, 256GB SSD.",
-      "image": "https://example.com/images/macbookairm1.jpg",
+      "image": " server/img/laptop.webp",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.8
@@ -163,7 +163,7 @@
       "image": "https://example.com/images/hpspectre.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.5
+      "rating": 1.5
     },
     {
       "id": "16",
@@ -174,7 +174,7 @@
       "image": "https://example.com/images/thinkpadx1.jpg",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 4.7
+      "rating": 2.7
     },
     {
       "id": "17",
@@ -185,7 +185,7 @@
       "image": "https://example.com/images/zenbook14.jpg",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 4.4
+      "rating": 3.4
     },
     {
       "id": "18",
@@ -270,7 +270,7 @@
       "category": "smartwatches",
       "price": 300,
       "description": "Apple Watch Series 6 reacondicionado con monitor de oxígeno.",
-      "image": "https://example.com/images/applewatch6.jpg",
+      "image": " /server/img/smartwatch.webp",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.7
@@ -402,7 +402,7 @@
       "category": "monitors",
       "price": 470,
       "description": "Monitor Dell UltraSharp 27\" 4K UHD, excelente para diseño.",
-      "image": "https://example.com/images/dellu2723qe.jpg",
+      "image":  "/server/img/monitor.webp",
       "condition": "reacondicionado",
       "year": 2021,
       "rating": 4.7
@@ -527,325 +527,6 @@
       "condition": "reacondicionado",
       "year": 2018,
       "rating": 4.1
-    },
-    {
-      "id": "5bd5",
-      "title": "Milcamovil",
-      "category": "Smartphone",
-      "price": 20,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750766705/luyusjjgnyv0w1gxkpv4.png",
-      "condition": "Viejo",
-      "year": 2020,
-      "description": "Cualquiera",
-      "rating": 0
-    },
-    {
-      "id": "81f4",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750769721/x1ony3gisscuecrjimly.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "8fc6",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750769883/qfke5lqf1rgpirnhugpg.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "f774",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750769970/zmryzqp3eohracdeldle.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "7afd",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750769979/nooojvjruz6f2gfbwj5b.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "292d",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770158/l0iek211bcm8hjg0to9v.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "b08b",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770241/gknjtye6wsjidjy2nr5u.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "2bf4",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770244/ufekztawentbrdoccnbf.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "612c",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770380/qd4gffm0tsg32rkrr7m5.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "71db",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770382/jka1vklkyzbqlrabdhxt.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "09e9",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770389/ik3dzysnpbc9yweemyd8.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "6586",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770475/h0dod2grdks9kvbipsxq.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "d7ba",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770478/ylhlzqaiqbrnsncpbmqy.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "1eb5",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770481/eoscff0u37kyjs9y4rta.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "9914",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770650/uldjilsfin3jn9gfulyc.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "8672",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770664/xfajnbgqdlauz6iweli9.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "2e49",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770666/ieo2gq4b5kxbmfljdkzk.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "2541",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770674/fg2umxu8zaebijd25cl4.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "947e",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770811/m5oky0dtyyq4hdxlr2c7.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "36d9",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770860/ue1abfmcqscc5tatia9d.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "629e",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770862/o6891q7rww6nmeq6p6te.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "cde5",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750770982/px8odwt3gy59b0g5o0lp.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "b115",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750771155/iifefcmvjlfp1agelej0.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "6b4a",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750771154/w5f7okc2hio7yjkvlhjm.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "fd95",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750771198/ceiasekvma8hgcaiyfeu.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "b094",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750771240/a6hkmssc2i3lyi00mnej.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "c448",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750771239/cvg7lfozcema6obzgd79.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "54b3",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750771247/o63iarbozbiqwybr0gig.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
-    },
-    {
-      "id": "c9af",
-      "title": "milcaphone",
-      "category": "laptops",
-      "price": 200,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750771288/pos7tsoyo0qkyabtm0vn.jpg",
-      "condition": "Nuevo",
-      "year": 2020,
-      "description": "Milcaphone nuevo totalmente nuevo nuevo",
-      "rating": 0
     }
   ]
 }
