@@ -1,48 +1,41 @@
-// modal-single-product.js
-
 export function openProductModal(producto) {
   const modal = document.getElementById("single-product");
   const modalContent = document.getElementById("product-modal-content");
 
-  // Cargar la estructura HTML de singleProduct.html dinámicamente
-  fetch("/src/views/singleProduct.html")
-    .then((res) => {
-      res.text();
-      console.warn(res.text())})
-    .then((html) => {
-      modalContent.innerHTML = html;
+  // Asegúrate de que el contenido ya esté en el HTML
+  const modalImg = modalContent.querySelector("#modal-img");
+  const modalTitulo = modalContent.querySelector("#modal-titulo");
+  const precioSpan = modalContent.querySelector("p span");
+  const modalDescripcion = modalContent.querySelector("#modal-descripcion");
+  const modalEstado = modalContent.querySelector("#modal-estado");
+  const modalAnio = modalContent.querySelector("#modal-anio");
 
-      // Ahora que el HTML está cargado, podemos modificar el contenido
-      document.querySelector("#modal-img").src = producto.image;
-      document.querySelector("#modal-img").alt = producto.title;
-      document.querySelector("#modal-titulo").textContent = producto.title;
+  if (!modalImg || !modalTitulo || !precioSpan) {
+    console.error("⚠️ No se encontraron elementos dentro del modal.");
+    return;
+  }
 
-      const precioSpan = modalContent.querySelector("p span");
-      if (precioSpan) precioSpan.textContent = `$${producto.price}`;
+  // Asignar los datos del producto
+  modalImg.src = producto.image;
+  modalImg.alt = producto.title;
+  modalTitulo.textContent = producto.title;
+  precioSpan.textContent = `$${producto.price}`;
+  modalDescripcion.textContent = producto.description;
+  modalEstado.textContent = producto.state ?? "Nuevo";
+  modalAnio.textContent = producto.year ?? "2024";
 
-      document.querySelector("#modal-descripcion").textContent = producto.description;
-      document.querySelector("#modal-estado").textContent = producto.state ?? "Nuevo";
-      document.querySelector("#modal-anio").textContent = producto.year ?? "2024";
+  // Establecer la puntuación de estrellas
+  const ratingValue = Math.round(producto.rating);
+  const ratingInput = modalContent.querySelector(`#star${ratingValue}`);
+  if (ratingInput) ratingInput.checked = true;
 
-      // Establecer la puntuación de estrellas en el modal
-      const ratingValue = Math.round(producto.rating);
-      if (ratingValue) {
-        const ratingInput = modalContent.querySelector(`#star${ratingValue}`);
-        if (ratingInput) ratingInput.checked = true;
-      }
+  // Mostrar el modal
+  modal.showModal();
 
-      // Mostrar el modal
-      modal.showModal();
+  // Agregar listeners de cierre solo si aún no están
+  const cerrarBtn = modalContent.querySelector("#cerrar");
+  const cerrarIcon = document.getElementById("close-modal");
 
-      // Cerrar el modal
-      document.getElementById("cerrar")?.addEventListener("click", () => {
-        modal.close();
-      });
-      document.getElementById("close-modal")?.addEventListener("click", () => {
-        modal.close();
-      });
-    })
-    .catch((err) => {
-      console.error("Error al cargar el modal:", err);
-    });
+  cerrarBtn?.addEventListener("click", () => modal.close());
+  cerrarIcon?.addEventListener("click", () => modal.close());
 }
