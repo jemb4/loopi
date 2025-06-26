@@ -549,6 +549,17 @@
       "year": 222,
       "description": "aaa",
       "rating": 0
+    },
+    {
+      "id": "8f75",
+      "title": "Paula",
+      "category": "mobiles",
+      "price": 20,
+      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1750931531/gmqnclvhmzvr9ni2jsxz.jpg",
+      "condition": "Nuevo",
+      "year": 2020,
+      "description": "una descripción",
+      "rating": 0
     }
   ]
 }

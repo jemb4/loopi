@@ -1,27 +1,28 @@
 // modal-single-product.js
 
 export function openProductModal(producto) {
-  console.warn(producto)
   const modal = document.getElementById("single-product");
   const modalContent = document.getElementById("product-modal-content");
 
   // Cargar la estructura HTML de singleProduct.html dinámicamente
-  fetch("../views/singleProduct.html")
-    .then((res) => res.text())
+  fetch("/src/views/singleProduct.html")
+    .then((res) => {
+      res.text();
+      console.warn(res.text())})
     .then((html) => {
       modalContent.innerHTML = html;
 
       // Ahora que el HTML está cargado, podemos modificar el contenido
-      document.getElementById("modal-img").src = producto.image;
-      document.getElementById("modal-img").alt = producto.title;
-      document.getElementById("modal-titulo").textContent = producto.title;
+      document.querySelector("#modal-img").src = producto.image;
+      document.querySelector("#modal-img").alt = producto.title;
+      document.querySelector("#modal-titulo").textContent = producto.title;
 
       const precioSpan = modalContent.querySelector("p span");
       if (precioSpan) precioSpan.textContent = `$${producto.price}`;
 
-      document.getElementById("modal-descripcion").textContent = producto.description;
-      document.getElementById("modal-estado").textContent = producto.state ?? "Nuevo";
-      document.getElementById("modal-anio").textContent = producto.year ?? "2024";
+      document.querySelector("#modal-descripcion").textContent = producto.description;
+      document.querySelector("#modal-estado").textContent = producto.state ?? "Nuevo";
+      document.querySelector("#modal-anio").textContent = producto.year ?? "2024";
 
       // Establecer la puntuación de estrellas en el modal
       const ratingValue = Math.round(producto.rating);
