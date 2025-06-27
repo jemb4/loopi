@@ -1,17 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "title": "iPhone 12 Reacondicionado",
-      "category": "mobiles",
-      "price": 350,
-      "description": "iPhone 12 reacondicionado con pantalla OLED y 64GB.",
-      "image": "/server/img/iphone12.webp",
-      "condition": "reacondicionado",
-      "year": 2020,
-      "rating": 3.5
-    },
-    {
       "id": "2",
       "title": "Samsung Galaxy S20",
       "category": "mobiles",
@@ -120,17 +109,6 @@
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.6
-    },
-    {
-      "id": "12",
-      "title": "Realme 7 Pro",
-      "category": "mobiles",
-      "price": 170,
-      "description": "Realme 7 Pro reacondicionado, carga rápida y cámara de 64MP.",
-      "image": "/server/img/iphone12.webp",
-      "condition": "reacondicionado",
-      "year": 2020,
-      "rating": 4.8
     },
     {
       "id": "13",
@@ -529,17 +507,6 @@
       "rating": 4.1
     },
     {
-      "id": "ef07",
-      "title": "aaa",
-      "category": "mobiles",
-      "price": 222,
-      "image": "https://www.mdvacationclub.com/wp-content/uploads/2018/12/Placeholder.png",
-      "condition": "aaa",
-      "year": 222,
-      "description": "aaa",
-      "rating": 0
-    },
-    {
       "id": "7a1e",
       "title": "aaaa3",
       "category": "mobiles",
@@ -562,14 +529,24 @@
       "rating": 0
     },
     {
-      "id": "93fc",
-      "title": "Manzana",
-      "category": "mobiles",
+      "id": "2f94",
+      "title": "prueba smartwatch",
       "price": 20,
-      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1751006524/urhse9svnkemat3zt1di.jpg",
-      "condition": "Mordida",
+      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1751009825/kshiyxow2nnvdcb38c8a.jpg",
+      "condition": "Algo roto",
       "year": 2020,
-      "description": "Una manzana mordida",
+      "description": "Funciona bien",
+      "rating": 0
+    },
+    {
+      "id": "03d7",
+      "title": "prueba smartwatch",
+      "category": "smartwatches",
+      "price": 1212,
+      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1751010019/lshd88yacnl0mncrdpgc.jpg",
+      "condition": "Nuevo",
+      "year": 2020,
+      "description": "Funciona perfecto\nno tiene fallos",
       "rating": 0
     }
   ]

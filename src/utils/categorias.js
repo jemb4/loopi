@@ -77,17 +77,17 @@ function renderSection(categoria, productos) {
 
   html += `</section>`;
 
-        setTimeout(() => {
-          document.querySelectorAll(".producto").forEach(el => {
-            console.log(el.getAttribute('data-id'))
-            el.addEventListener("click", () => {
-              const id = el.getAttribute('data-id');
-              console.warn(id)
-              const producto = productos.find(p => p.id == id);
-              if (producto) openProductModal(producto);
-            });
-          });
-        }, 0);
+  setTimeout(() => {
+    document.querySelectorAll(".producto").forEach(el => {
+      console.log(el.getAttribute('data-id'))
+      el.addEventListener("click", () => {
+        const id = el.getAttribute('data-id');
+        console.warn(id)
+        const producto = productos.find(p => p.id == id);
+        if (producto) openProductModal(producto);
+      });
+    });
+  }, 0);
 
   return html;
 }
