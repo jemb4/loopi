@@ -1,3 +1,5 @@
+import { openProductModal } from "./modal-single-product.js";
+
 const input = document.querySelector("input[placeholder='Buscar productos...']");
 const container = document.querySelector("#productos-container");
 
@@ -25,14 +27,16 @@ input.addEventListener("input", async (e) => {
       </div>
     </section>
   `;
+
+  activateProductListener(filtrados);
 });
 
 function renderProductoCard(p) {
   return `
-    <div class="bg-white border border-gray-200 rounded-lg shadow-lg">
-      <a href="#">
+    <div class="bg-white border border-gray-200 rounded-lg shadow-lg producto cursor-pointer" data-id="${p.id}">
+      
         <img class="p-8 rounded-t-lg w-full object-contain h-60" src="${p.image}" alt="${p.title}" />
-      </a>
+      
       <div class="px-5 pb-5">
         <a href="#">
           <h5 class="text-xl font-semibold tracking-tight text-gray-900">${p.title}</h5>
@@ -119,5 +123,18 @@ async function renderProductosPorCategoria(productos) {
     `;
 
     container.innerHTML += html;
+    activateProductListener(productos)
   });
+}
+
+const activateProductListener = (products) => {
+    setTimeout(() => {
+    document.querySelectorAll(".producto").forEach(el => {
+      const id = el.getAttribute("data-id");
+      const product = products.find(p => p.id == id);
+      if (product) {
+        el.addEventListener("click", () => openProductModal(product));
+      }
+    });
+  }, 0);
 }
