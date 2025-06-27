@@ -33,28 +33,33 @@ input.addEventListener("input", async (e) => {
 
 function renderProductoCard(p) {
   return `
-    <div class="bg-white border border-gray-200 rounded-lg shadow-lg producto cursor-pointer" data-id="${p.id}">
-      
-        <img class="p-8 rounded-t-lg w-full object-contain h-60" src="${p.image}" alt="${p.title}" />
-      
-      <div class="px-5 pb-5">
-        <a href="#">
-          <h5 class="text-xl font-semibold tracking-tight text-gray-900">${p.title}</h5>
-        </a>
-        <div class="flex items-center mt-2.5 mb-5">
-          <div class="flex items-center space-x-1">
-            ${renderStars(p.rating)}
-          </div>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ml-3">${p.rating}</span>
-        </div>
-        <div class="flex items-center justify-between">
-          <span class="text-3xl font-bold text-gray-900">$${p.price}</span>
-          <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-            Añadir al carrito
-          </a>
-        </div>
+    <div class="bg-white border border-gray-200 rounded-lg shadow-lg producto" data-id="${
+       p.id
+     }">
+  <img class="p-8 cursor-pointer rounded-t-lg w-full object-contain h-60" src="${
+    p.image
+  }" alt="${p.title}" />
+
+  
+  <div class="px-5 pb-5 text-center">
+    <a href="#">
+      <h5 class="text-xl font-semibold tracking-tight text-gray-900">${
+        p.title
+      }</h5>
+    </a>
+    <div class="flex justify-center items-center mt-2.5 mb-5 space-x-3">
+      <div class="flex items-center space-x-1">
+        ${renderStars(p.rating)}
       </div>
+      <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm">
+        ${p.rating}
+      </span>
     </div>
+    <div>
+      <span class="text-3xl font-bold text-gray-900">${p.price}€</span>
+    </div>
+  </div>
+</div>
   `;
 }
 
