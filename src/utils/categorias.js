@@ -1,3 +1,5 @@
+import { openProductModal } from "./modal-single-product.js";
+
 document.addEventListener("DOMContentLoaded", async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const categoria = urlParams.get("categoria");
@@ -48,10 +50,10 @@ function renderSection(categoria, productos) {
 
   productos.forEach(p => {
     html += `
-      <div class="bg-white border border-gray-200 rounded-lg shadow-lg">
-        <a href="#">
-          <img class="p-8 rounded-t-lg w-full object-contain h-60" src="${p.image}" alt="${p.title}" />
-        </a>
+      <div class="bg-white border border-gray-200 rounded-lg shadow-lg producto" data-id="${p.id}">
+        
+          <img class="p-8 cursor-pointer rounded-t-lg w-full object-contain h-60" src="${p.image}" alt="${p.title}" />
+        
         <div class="px-5 pb-5">
           <a href="#">
             <h5 class="text-xl font-semibold tracking-tight text-gray-900">${p.title}</h5>
@@ -74,6 +76,19 @@ function renderSection(categoria, productos) {
   });
 
   html += `</section>`;
+
+  setTimeout(() => {
+    document.querySelectorAll(".producto").forEach(el => {
+      console.log(el.getAttribute('data-id'))
+      el.addEventListener("click", () => {
+        const id = el.getAttribute('data-id');
+        console.warn(id)
+        const producto = productos.find(p => p.id == id);
+        if (producto) openProductModal(producto);
+      });
+    });
+  }, 0);
+
   return html;
 }
 

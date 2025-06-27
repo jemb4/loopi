@@ -64,8 +64,7 @@
       "image": "/server/img/sony-xperia-10-ii-1.png",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 5.0
-
+      "rating": 4
     },
     {
       "id": "7",
@@ -98,7 +97,7 @@
       "image": "/server/img/nokia7.2.webp",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": "10",
@@ -519,7 +518,7 @@
       "rating": 4.3
     },
     {
-      "id": 48,
+      "id": "48",
       "title": "ASUS VG245H",
       "category": "monitors",
       "price": 220,
