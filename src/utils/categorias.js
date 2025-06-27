@@ -15,19 +15,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     if (categoria) {
       // Mostrar solo la categoría filtrada
-      const filtrados = productos.filter(p => p.category === categoria);
+      const filtrados = productos.filter((p) => p.category === categoria);
       if (filtrados.length === 0) {
-        container.innerHTML = ""; 
+        container.innerHTML = "";
         return;
       }
       html += renderSection(categoria, filtrados);
-
     } else {
       // Mostrar solo las primeras 3 categorías únicas
-      const categoriasUnicas = [...new Set(productos.map(p => p.category))].slice(0, 3);
+      const categoriasUnicas = [
+        ...new Set(productos.map((p) => p.category)),
+      ].slice(0, 3);
 
-      categoriasUnicas.forEach(cat => {
-        const filtrados = productos.filter(p => p.category === cat);
+      categoriasUnicas.forEach((cat) => {
+        const filtrados = productos.filter((p) => p.category === cat);
         if (filtrados.length > 0) {
           html += renderSection(cat, filtrados);
         }
@@ -35,7 +36,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     container.innerHTML = html;
-
   } catch (error) {
     container.innerHTML = `<p class="text-red-500 text-center">Error cargando productos</p>`;
     console.error(error);
@@ -48,42 +48,48 @@ function renderSection(categoria, productos) {
     <section class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
   `;
 
-  productos.forEach(p => {
+  productos.forEach((p) => {
     html += `
-      <div class="bg-white border border-gray-200 rounded-lg shadow-lg producto" data-id="${p.id}">
-        
-          <img class="p-8 cursor-pointer rounded-t-lg w-full object-contain h-60" src="${p.image}" alt="${p.title}" />
-        
-        <div class="px-5 pb-5">
-          <a href="#">
-            <h5 class="text-xl font-semibold tracking-tight text-gray-900">${p.title}</h5>
-          </a>
-          <div class="flex items-center mt-2.5 mb-5">
-            <div class="flex items-center space-x-1">
-              ${renderStars(p.rating)}
-            </div>
-            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm ml-3">${p.rating}</span>
-          </div>
-          <div class="flex items-center justify-between">
-            <span class="text-3xl font-bold text-gray-900">$${p.price}</span>
-            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-              Añadir al carrito
-            </a>
-          </div>
-        </div>
+     <div class="bg-white border border-gray-200 rounded-lg shadow-lg producto" data-id="${
+       p.id
+     }">
+  <img class="p-8 cursor-pointer rounded-t-lg w-full object-contain h-60" src="${
+    p.image
+  }" alt="${p.title}" />
+
+  
+  <div class="px-5 pb-5 text-center">
+    <a href="#">
+      <h5 class="text-xl font-semibold tracking-tight text-gray-900">${
+        p.title
+      }</h5>
+    </a>
+    <div class="flex justify-center items-center mt-2.5 mb-5 space-x-3">
+      <div class="flex items-center space-x-1">
+        ${renderStars(p.rating)}
       </div>
+      <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm">
+        ${p.rating}
+      </span>
+    </div>
+    <div>
+      <span class="text-3xl font-bold text-gray-900">${p.price}€</span>
+    </div>
+  </div>
+</div>
+
     `;
   });
 
   html += `</section>`;
 
   setTimeout(() => {
-    document.querySelectorAll(".producto").forEach(el => {
-      console.log(el.getAttribute('data-id'))
+    document.querySelectorAll(".producto").forEach((el) => {
+      console.log(el.getAttribute("data-id"));
       el.addEventListener("click", () => {
-        const id = el.getAttribute('data-id');
-        console.warn(id)
-        const producto = productos.find(p => p.id == id);
+        const id = el.getAttribute("data-id");
+        console.warn(id);
+        const producto = productos.find((p) => p.id == id);
         if (producto) openProductModal(producto);
       });
     });
@@ -131,5 +137,7 @@ function renderStars(rating) {
   const hasHalf = rating % 1 >= 0.25 && rating % 1 < 0.75;
   const empty = 5 - full - (hasHalf ? 1 : 0);
 
-  return fullStar.repeat(full) + (hasHalf ? halfStar : '') + emptyStar.repeat(empty);
+  return (
+    fullStar.repeat(full) + (hasHalf ? halfStar : "") + emptyStar.repeat(empty)
+  );
 }
