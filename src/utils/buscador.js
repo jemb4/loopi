@@ -3,33 +3,7 @@ import { openProductModal } from "./modal-single-product.js";
 const input = document.querySelector("input[placeholder='Buscar productos...']");
 const container = document.querySelector("#productos-container");
 
-input.addEventListener("input", async (e) => {
-  const query = e.target.value.toLowerCase();
 
-  const res = await fetch("http://localhost:8000/products");
-  const productos = await res.json();
-
-  if (query === "") {
-    renderProductosPorCategoria(productos); // Restaurar vista original
-    return;
-  }
-
-  const filtrados = productos.filter(p =>
-    p.title.toLowerCase().includes(query) ||
-    p.description.toLowerCase().includes(query)
-  );
-
-  container.innerHTML = `
-    <section>
-      <h2 class="text-3xl font-bold mb-6 text-blue-700">Resultados de búsqueda</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        ${filtrados.map(p => renderProductoCard(p)).join("")}
-      </div>
-    </section>
-  `;
-
-  activateProductListener(filtrados);
-});
 
 function renderProductoCard(p) {
   return `
@@ -131,6 +105,34 @@ async function renderProductosPorCategoria(productos) {
     activateProductListener(productos)
   });
 }
+
+input.addEventListener("input", async (e) => {
+  const query = e.target.value.toLowerCase();
+
+  const res = await fetch("http://localhost:8000/products");
+  const productos = await res.json();
+
+  if (query === "") {
+    renderProductosPorCategoria(productos); // Restaurar vista original
+    return;
+  }
+
+  const filtrados = productos.filter(p =>
+    p.title.toLowerCase().includes(query) ||
+    p.description.toLowerCase().includes(query)
+  );
+
+  container.innerHTML = `
+    <section>
+      <h2 class="text-3xl font-bold mb-6 text-blue-700">Resultados de búsqueda</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        ${filtrados.map(p => renderProductoCard(p)).join("")}
+      </div>
+    </section>
+  `;
+
+  activateProductListener(filtrados);
+});
 
 const activateProductListener = (products) => {
     setTimeout(() => {
