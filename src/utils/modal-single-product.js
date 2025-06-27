@@ -38,4 +38,35 @@ export function openProductModal(producto) {
 
   cerrarBtn?.addEventListener("click", () => modal.close());
   cerrarIcon?.addEventListener("click", () => modal.close());
+
+
+  // Botón eliminar
+
+  const deleteButton = modalContent.querySelector("button.bg-gray-200");
+  deleteButton.dataset.id = producto.id;
+
+  deleteButton.addEventListener("click", async () => {
+  const productId = deleteButton.dataset.id;
+
+  try {
+    // Aquí asumo que estás usando JSON Server
+    const response = await fetch(`http://localhost:8000/products/${productId}`, {
+      method: "DELETE",
+    });
+
+    if (response.ok) {
+      alert("✅ Producto eliminado correctamente.");
+      modal.close();
+
+      // Opcional: eliminar el producto del DOM si es necesario
+      const productCard = document.getElementById(`product-${productId}`);
+      if (productCard) productCard.remove();
+    } else {
+      alert("❌ Error al eliminar el producto.");
+    }
+  } catch (error) {
+    console.error("Error al eliminar el producto:", error);
+    alert("⚠️ Ocurrió un error al intentar eliminar el producto.");
+  }
+});
 }

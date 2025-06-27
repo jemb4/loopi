@@ -46,4 +46,6 @@ const selectCategory = (category) => {
   if (category === 'Smartwatch') return 'smartwatches'
   if (category === 'Laptops') return 'laptops'
   if (category === 'Smartphone') return 'mobiles'
+  if (category === 'Monitor') return 'monitors'
+  return smartwatches
 }
