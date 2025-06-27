@@ -1,3 +1,5 @@
+import { openProductModal } from "./src/utils/modal-single-product.js";
+
 document.addEventListener("DOMContentLoaded", async () => {
   const container = document.querySelector("#productos-container");
 
@@ -22,14 +24,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       productosCategoria.forEach(p => {
         html += `
-          <div class="bg-white border border-gray-200 rounded-lg shadow-lg">
-            <a href="#">
-              <img class="p-8 rounded-t-lg w-full object-contain h-60" src="${p.image}" alt="${p.title}" />
-            </a>
+          <div class="bg-white border border-gray-200 rounded-lg shadow-lg cursor-pointer producto" data-id="${p.id}">
+            <img class="p-8 rounded-t-lg w-full object-contain h-60" src="${p.image}" alt="${p.title}" />
             <div class="px-5 pb-5">
-              <a href="#">
-                <h5 class="text-xl font-semibold tracking-tight text-gray-900">${p.title}</h5>
-              </a>
+              <h5 class="text-xl font-semibold tracking-tight text-gray-900">${p.title}</h5>
               <div class="flex items-center mt-2.5 mb-5">
                 <div class="flex items-center space-x-1">
                   ${renderStars(p.rating)}
@@ -38,9 +36,9 @@ document.addEventListener("DOMContentLoaded", async () => {
               </div>
               <div class="flex items-center justify-between">
                 <span class="text-3xl font-bold text-gray-900">$${p.price}</span>
-                <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                <button class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                   Añadir al carrito
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -49,6 +47,19 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       html += `</div></section>`;
       container.innerHTML += html;
+
+      // SEGUIR DESDE AQUI
+      setTimeout(() => {
+        document.querySelectorAll(".producto").forEach(el => {
+          console.log(el.getAttribute('data-id'))
+          el.addEventListener("click", () => {
+            const id = el.getAttribute('data-id');
+            console.warn(id)
+            const producto = productos.find(p => p.id == id);
+            if (producto) openProductModal(producto);
+          });
+        });
+      }, 0);
     });
 
   } catch (error) {

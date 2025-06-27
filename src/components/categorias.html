@@ -144,6 +144,122 @@
   </div>
 </div>
 
+    <dialog
+      id="single-product"
+      class="rounded-lg p-6 max-w-3xl w-full bg-white shadow-lg border border-gray-300"
+    >
+      <div id="product-modal-content">
+      <div
+      id="modal"
+      class="rounded-lg p-6 max-w-3xl w-full bg-white shadow-lg border border-gray-300"
+      >
+      <!-- Botón cerrar -->
+      <button
+        id="cerrar"
+        class="text-gray-500 hover:text-red-500 text-xl float-right"
+      >
+        ✖
+      </button>
+
+      <!-- Contenido del modal -->
+      <div class="flex flex-col md:flex-row gap-6 mt-4">
+        <!-- Imagen -->
+        <img
+          id="modal-img"
+          src=""
+          alt=""
+          class="w-full md:w-1/2 rounded-md object-contain max-h-64"
+        />
+
+        <!-- Detalles -->
+        <div class="flex flex-col justify-between w-full">
+          <h2
+            id="modal-titulo"
+            class="text-2xl font-semibold text-gray-800 mb-2"
+          ></h2>
+
+          <p class="text-gray-700 text-lg">
+            <strong>Precio:</strong> <span></span>
+          </p>
+
+          <!-- Estrellas -->
+          <form>
+            <div
+              class="star-rating flex flex-row-reverse justify-start gap-1 text-yellow-400 text-2xl"
+            >
+              <input
+                type="radio"
+                id="star5"
+                name="rating"
+                value="5"
+                class="hidden"
+              /><label for="star5" class="cursor-pointer">★</label>
+              <input
+                type="radio"
+                id="star4"
+                name="rating"
+                value="4"
+                class="hidden"
+              /><label for="star4" class="cursor-pointer">★</label>
+              <input
+                type="radio"
+                id="star3"
+                name="rating"
+                value="3"
+                class="hidden"
+              /><label for="star3" class="cursor-pointer">★</label>
+              <input
+                type="radio"
+                id="star2"
+                name="rating"
+                value="2"
+                class="hidden"
+              /><label for="star2" class="cursor-pointer">★</label>
+              <input
+                type="radio"
+                id="star1"
+                name="rating"
+                value="1"
+                class="hidden"
+              /><label for="star1" class="cursor-pointer">★</label>
+            </div>
+          </form>
+
+          <!-- Botones -->
+          <div class="flex gap-3 mt-4">
+            <button
+              class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm"
+            >
+              Añadir al carrito
+            </button>
+            <button
+              class="bg-yellow-300 hover:bg-yellow-400 text-black px-4 py-2 rounded-md text-sm"
+            >
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Características -->
+      <div class="mt-6 bg-blue-600 text-white p-4 rounded-md">
+        <h3
+          class="text-lg font-semibold mb-2 flex items-center justify-between"
+        >
+          Características
+          <span class="text-2xl">≡</span>
+        </h3>
+        <ul class="list-disc list-inside space-y-1 text-sm">
+          <li>
+            <strong>Descripción:</strong> <span id="modal-descripcion"></span>
+          </li>
+          <li><strong>Estado:</strong> <span id="modal-estado"></span></li>
+          <li><strong>Año:</strong> <span id="modal-anio"></span></li>
+        </ul>
+      </div>
+    </div>
+      </div>
+    </dialog>
 
 
   <!-- Footer -->
@@ -210,7 +326,7 @@
   <script src="/src/utils/hamburguer-btn.js"></script>
   <script src="/src/utils/buscador.js"></script>
   <script src="/main.js"></script>  
-  <script src="/src/utils/categorias.js"></script>
+  <script type="module" src="/src/utils/categorias.js"></script>
   <script src="/src/utils/modal-categorias.js"></script>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();

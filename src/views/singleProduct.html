@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100 p-6">
-    <dialog
+    <div
       id="modal"
       class="rounded-lg p-6 max-w-3xl w-full bg-white shadow-lg border border-gray-300"
     >
@@ -115,37 +115,8 @@
           <li><strong>Año:</strong> <span id="modal-anio"></span></li>
         </ul>
       </div>
-    </dialog>
-
-    <!-- Artículos simulados -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-      <div
-        class="articulo cursor-pointer bg-white p-4 rounded shadow"
-        data-titulo="Titulo"
-        data-src="../img/LOGO.png"
-        data-alt="En la imagen se aprecia el logo de la empresa"
-        data-descripcion=""
-      >
-        <h3 class="text-center font-semibold">Artículo</h3>
-      </div>
-
-      <div
-        class="articulo cursor-pointer bg-white p-4 rounded shadow"
-        data-titulo="Titulo2"
-        data-descripcion=""
-      >
-        <h3 class="text-center font-semibold">Artículo 2</h3>
-      </div>
-
-      <div
-        class="articulo cursor-pointer bg-white p-4 rounded shadow"
-        data-titulo="Titulo3"
-        data-descripcion=""
-      >
-        <h3 class="text-center font-semibold">Artículo 3</h3>
-      </div>
     </div>
-
-    <script src="modal.js"></script>
+    <script type="module" src="../../main-copy.js"></script>
+    <script type="module" src="../utils/modal-single-product.js"></script>
   </body>
 </html>

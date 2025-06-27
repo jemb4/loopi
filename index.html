@@ -1,224 +1,422 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loopi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loopi</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
-  <link rel="icon" href="/src/img/icons8-búsqueda.svg" type="image/x-icon">
-</head>
-
-<body class="flex flex-col min-h-screen">
-
-  <!-- Header -->
-<header class="bg-gray-100 shadow-md">
-  <div class="max-w-7xl px-2 py-2 mx-auto flex items-center justify-between">
-    <!-- Logo + Search -->
-    <div class="flex items-center gap-8">
-      <a href="/" aria-label="Ir a la página principal de Loopi">
-        <img src="/src/img/LOGO.png" alt="Loopi Logo" class="w-32 h-auto" />
-      </a>
-      <div class="relative">
-        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-          <img src="/src/img/icons8-búsqueda.svg" alt="Buscar" class="w-5 h-5" />
-        </span>
-        <input
-          type="text"
-          placeholder="Buscar productos..."
-          class="pl-10 pr-4 py-2 w-96 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-    </div>
-
-    <!-- Botón Vender más pequeño -->
-    <a href="/src/views/form.html">
-      <button
-        type="button"
-        class="px-4 py-2 text-sm font-medium text-white inline-flex items-center bg-[#1f70db] hover:bg-[#2f80ed] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg"
+  <body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-gray-100 shadow-md">
+      <div
+        class="max-w-7xl px-4 py-2 mx-auto flex items-center justify-between"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="w-5 h-5 mr-2"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 12H3m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18-3a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"
-          />
-        </svg>
-        VENDER
-      </button>
-    </a>
-  </div>
-
-  <!-- Segunda barra de navegación -->
-  <nav class="bg-[#003c85] text-white">
-    <div class="max-w-7xl px-4 py-2 flex items-center justify-between">
-      <div class="flex items-center flex-1">
-        <!-- Menú hamburguesa -->
-        <button id="menu-toggle" class="lg:hidden mr-4">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-
-        <!-- Menú enlaces -->
-        <div id="menu" class="hidden lg:flex space-x-10">
-          <a href="#" id="abrir-categorias" class="flex items-center gap-2">
-            <i class="fa-solid fa-bars"></i>
-            Todas las categorías
+        <!-- Logo + Search -->
+        <div class="flex items-center gap-4">
+          <a href="/" aria-label="Ir a la página principal de Loopi">
+            <img src="/src/img/LOGO.png" alt="Loopi Logo" class="w-32 h-auto" />
           </a>
-          <a href="/src/components/categorias.html?categoria=mobiles">Móviles</a>
-          <a href="/src/components/categorias.html?categoria=tablets">Tablets</a>
-          <a href="/src/components/categorias.html?categoria=laptops">Laptops</a>
+          <div class="relative">
+            <span
+              class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+            >
+              <img
+                src="/src/img/icons8-búsqueda.svg"
+                alt="Buscar"
+                class="w-5 h-5"
+              />
+            </span>
+            <input
+              type="text"
+              placeholder="Buscar productos..."
+              class="pl-10 pr-4 py-2 w-96 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
         </div>
+
+        <!-- Botón Vender -->
+        <a href="/src/views/form.html">
+          <button
+            type="button"
+            class="px-6 py-3.5 text-base font-medium text-white inline-flex items-center bg-[#1f70db] hover:bg-[#2f80ed] focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 mr-2"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 12H3m18 0v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6m18 0V9M3 12V9m18-3a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v3"
+              />
+            </svg>
+            VENDER
+          </button>
+        </a>
       </div>
 
-      <!-- Icono carrito alineado completamente a la derecha -->
-      <div class="ml-auto">
-        <a href="#" class="text-2xl">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-      </div>
-    </div>
-  </nav>
-</header>
+      <!-- Segunda barra de navegación -->
+      <nav class="bg-[#003c85] text-white">
+        <div class="px-4 py-2 flex justify-between items-center">
+          <!-- Menú hamburguesa -->
+          <button id="menu-toggle" class="lg:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
 
+          <!-- Menú enlaces -->
+          <div id="menu" class="hidden lg:flex space-x-6">
+            <a href="#" id="abrir-categorias">Todas las categorías</a>
+            <a href="/src/components/categorias.html?categoria=mobiles"
+              >Móviles</a
+            >
+            <a href="/src/components/categorias.html?categoria=tablets"
+              >Tablets</a
+            >
+            <a href="/src/components/categorias.html?categoria=laptops"
+              >Laptops</a
+            >
+          </div>
 
-  <!-- Main -->
-  <main class="flex-grow bg-gray-100 py-10 px-4">
-    <div class="max-w-7xl mx-auto space-y-12" id="productos-container">
-      <!-- Aquí se cargarán las secciones por categoría -->
-    </div>
-  </main>
-
-
-  <!-- Modal lateral de categorías -->
-<div id="modal-categorias" class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex">
-  <div class="w-72 h-full bg-white shadow-2xl p-6 rounded-r-xl relative animate-slide-in-left">
-    
-    <!-- Botón cerrar -->
-    <button id="cerrar-categorias" aria-label="Cerrar menú"
-      class="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-2xl transition-colors duration-200">
-      &times;
-    </button>
-
-    <!-- Título -->
-    <h2 class="text-xl font-semibold text-[#003c85] mb-6 border-b pb-2">Categorías</h2>
-
-    <!-- Lista de categorías -->
-    <ul class="space-y-4">
-      <li>
-        <a href="/src/components/categorias.html?categoria=mobiles"
-          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
-           Móviles
-        </a>
-      </li>
-      <li>
-        <a href="/src/components/categorias.html?categoria=tablets"
-          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
-           Tablets
-        </a>
-      </li>
-      <li>
-        <a href="/src/components/categorias.html?categoria=laptops"
-          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
-          Laptops
-        </a>
-      </li>
-      <li>
-        <a href="/src/components/categorias.html?categoria=smartwatches"
-          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
-          Smartwatches
-        </a>
-      </li>
-      <li>
-        <a href="/src/components/categorias.html?categoria=monitors"
-          class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-100 hover:text-[#003c85] transition duration-200">
-          Monitores
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-
-
-  <!-- Footer -->
-  <footer class="bg-[#003c85] text-white text-sm">
-    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-start gap-4">
-      <!-- Logo -->
-      <a href="/" aria-label="Ir a la página principal de Loopi">
-        <img src="/src/img/LOGO.png" class="w-40 h-auto" alt="Loopi Logo" />
-      </a>
-
-      <!-- Navegación Footer -->
-      <nav class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 text-xs font-medium text-gray-200">
-        <div>
-          <h2 class="mb-1 font-semibold uppercase text-white">Recursos</h2>
-          <ul class="space-y-0.5">
-            <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript/" target="_blank"
-                class="hover:underline hover:text-blue-400">JavaScript</a></li>
-            <li><a href="https://tailwindcss.com/" target="_blank" class="hover:underline hover:text-blue-400">Tailwind
-                CSS</a></li>
-            <li><a href="https://www.npmjs.com/package/json-server" target="_blank"
-                class="hover:underline hover:text-blue-400">Json-Server</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="mb-1 font-semibold uppercase text-white">Empresa</h2>
-          <ul class="space-y-0.5">
-            <li><a href="/src/components/footer_quienes-somos.html" target="_blank"
-                class="hover:underline hover:text-blue-400">Quiénes somos</a></li>
-            <li><a href="/src/components/footer_trabaja-con-nosotros.html" target="_blank"
-                class="hover:underline hover:text-blue-400">Trabaja con nosotros</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="mb-1 font-semibold uppercase text-white">Soporte</h2>
-          <ul class="space-y-0.5">
-            <li><a href="mailto:loopi@support.com" class="hover:underline hover:text-blue-400">Contacto</a></li>
-            <li><a href="https://github.com/jemb4/loopi" target="_blank"
-                class="hover:underline hover:text-blue-400">GitHub</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h2 class="mb-1 font-semibold uppercase text-white">Legal</h2>
-          <ul class="space-y-0.5">
-            <li><a href="/src/components/footer_politica-privacidad.html" target="_blank"
-                class="hover:underline hover:text-blue-400">Política de privacidad</a></li>
-            <li><a href="/src/components/footer_terminos-condiciones.html" target="_blank"
-                class="hover:underline hover:text-blue-400">Términos y condiciones</a></li>
-          </ul>
+          <!-- Icono carrito -->
+          <a href="#" class="text-2xl">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
         </div>
       </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-grow bg-gray-100 py-10 px-4">
+      <div class="max-w-7xl mx-auto space-y-12" id="productos-container">
+        <!-- Aquí se cargarán las secciones por categoría -->
+      </div>
+    </main>
+
+    <!-- Modal lateral de categorías -->
+    <div
+      id="modal-categorias"
+      class="fixed inset-0 z-50 hidden bg-black bg-opacity-50"
+    >
+      <div
+        class="w-64 h-full bg-white p-4 shadow-lg overflow-y-auto absolute left-0 top-0"
+      >
+        <button
+          id="cerrar-categorias"
+          class="text-gray-600 hover:text-red-500 text-xl float-right"
+        >
+          &times;
+        </button>
+        <h2 class="text-lg font-semibold mb-4">Categorías</h2>
+        <ul class="space-y-2">
+          <li>
+            <a
+              href="/src/components/categorias.html?categoria=mobiles"
+              class="text-blue-600 hover:underline"
+              >Móviles</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/components/categorias.html?categoria=tablets"
+              class="text-blue-600 hover:underline"
+              >Tablets</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/components/categorias.html?categoria=laptops"
+              class="text-blue-600 hover:underline"
+              >Laptops</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/components/categorias.html?categoria=smartwatches"
+              class="text-blue-600 hover:underline"
+              >Smartwatches</a
+            >
+          </li>
+          <li>
+            <a
+              href="/src/components/categorias.html?categoria=monitors"
+              class="text-blue-600 hover:underline"
+              >Monitores</a
+            >
+          </li>
+          <!-- Añade más si quieres -->
+        </ul>
+      </div>
     </div>
 
-    <hr class="border-gray-200 opacity-20" />
-    <div class="text-center text-gray-200 text-xs py-2">
-      © <span id="year">2024</span> <a href="/" class="hover:underline">Loopi™</a>. Todos los derechos reservados.
-    </div>
-  </footer>
+    <!-- Modal Producto: -->
+    <dialog
+      id="single-product"
+      class="rounded-lg p-6 max-w-3xl w-full bg-white shadow-lg border border-gray-300"
+    >
+      <div id="product-modal-content">
+        <div
+          id="modal"
+          class="rounded-lg p-6 max-w-3xl w-full bg-white shadow-lg border border-gray-300"
+        >
+          <!-- Botón cerrar -->
+          <button
+            id="cerrar"
+            class="text-gray-500 hover:text-red-500 text-xl float-right"
+          >
+            ✖
+          </button>
 
-  <!-- Scripts -->
-  <script type="module" src="/src/controllers/productServices.js"></script>
-  <script src="/src/utils/hamburguer-btn.js"></script>
-  <script src="/src/utils/buscador.js"></script>
-  <script src="main.js"></script>
-  <script src="src/utils/categorias.js"></script>
-  <script src="src/utils/modal-categorias.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+          <!-- Contenido del modal -->
+          <div class="flex flex-col md:flex-row gap-6 mt-4">
+            <!-- Imagen -->
+            <img
+              id="modal-img"
+              src=""
+              alt=""
+              class="w-full md:w-1/2 rounded-md object-contain max-h-64"
+            />
 
+            <!-- Detalles -->
+            <div class="flex flex-col justify-between w-full">
+              <h2
+                id="modal-titulo"
+                class="text-2xl font-semibold text-gray-800 mb-2"
+              ></h2>
+
+              <p class="text-gray-700 text-lg">
+                <strong>Precio:</strong> <span></span>
+              </p>
+
+              <!-- Estrellas -->
+              <form>
+                <div
+                  class="star-rating flex flex-row-reverse justify-start gap-1 text-yellow-400 text-2xl"
+                >
+                  <input
+                    type="radio"
+                    id="star5"
+                    name="rating"
+                    value="5"
+                    class="hidden"
+                  /><label for="star5" class="cursor-pointer">★</label>
+                  <input
+                    type="radio"
+                    id="star4"
+                    name="rating"
+                    value="4"
+                    class="hidden"
+                  /><label for="star4" class="cursor-pointer">★</label>
+                  <input
+                    type="radio"
+                    id="star3"
+                    name="rating"
+                    value="3"
+                    class="hidden"
+                  /><label for="star3" class="cursor-pointer">★</label>
+                  <input
+                    type="radio"
+                    id="star2"
+                    name="rating"
+                    value="2"
+                    class="hidden"
+                  /><label for="star2" class="cursor-pointer">★</label>
+                  <input
+                    type="radio"
+                    id="star1"
+                    name="rating"
+                    value="1"
+                    class="hidden"
+                  /><label for="star1" class="cursor-pointer">★</label>
+                </div>
+              </form>
+
+              <!-- Botones -->
+              <div class="flex gap-3 mt-4">
+                <button
+                  class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm"
+                >
+                  Añadir al carrito
+                </button>
+                <button
+                  class="bg-yellow-300 hover:bg-yellow-400 text-black px-4 py-2 rounded-md text-sm"
+                >
+                  Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Características -->
+          <div class="mt-6 bg-blue-600 text-white p-4 rounded-md">
+            <h3
+              class="text-lg font-semibold mb-2 flex items-center justify-between"
+            >
+              Características
+              <span class="text-2xl">≡</span>
+            </h3>
+            <ul class="list-disc list-inside space-y-1 text-sm">
+              <li>
+                <strong>Descripción:</strong>
+                <span id="modal-descripcion"></span>
+              </li>
+              <li><strong>Estado:</strong> <span id="modal-estado"></span></li>
+              <li><strong>Año:</strong> <span id="modal-anio"></span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <!-- Modal Producto: -->
+
+    <!-- Footer -->
+    <footer class="bg-[#003c85] text-white text-sm">
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-start gap-4"
+      >
+        <!-- Logo -->
+        <a href="/" aria-label="Ir a la página principal de Loopi">
+          <img src="/src/img/LOGO.png" class="w-40 h-auto" alt="Loopi Logo" />
+        </a>
+
+        <!-- Navegación Footer -->
+        <nav
+          class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 text-xs font-medium text-gray-200"
+        >
+          <div>
+            <h2 class="mb-1 font-semibold uppercase text-white">Recursos</h2>
+            <ul class="space-y-0.5">
+              <li>
+                <a
+                  href="https://developer.mozilla.org/es/docs/Web/JavaScript/"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >JavaScript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://tailwindcss.com/"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Tailwind CSS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.npmjs.com/package/json-server"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Json-Server</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-1 font-semibold uppercase text-white">Empresa</h2>
+            <ul class="space-y-0.5">
+              <li>
+                <a
+                  href="/src/components/footer_quienes-somos.html"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Quiénes somos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/components/footer_trabaja-con-nosotros.html"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Trabaja con nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-1 font-semibold uppercase text-white">Soporte</h2>
+            <ul class="space-y-0.5">
+              <li>
+                <a
+                  href="mailto:loopi@support.com"
+                  class="hover:underline hover:text-blue-400"
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/jemb4/loopi"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="mb-1 font-semibold uppercase text-white">Legal</h2>
+            <ul class="space-y-0.5">
+              <li>
+                <a
+                  href="/src/components/footer_politica-privacidad.html"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Política de privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/src/components/footer_terminos-condiciones.html"
+                  target="_blank"
+                  class="hover:underline hover:text-blue-400"
+                  >Términos y condiciones</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <hr class="border-gray-200 opacity-20" />
+      <div class="text-center text-gray-200 text-xs py-2">
+        © <span id="year">2024</span>
+        <a href="/" class="hover:underline">Loopi™</a>. Todos los derechos
+        reservados.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="/src/services/ProductServices.js"></script>
+    <script src="/src/utils/hamburguer-btn.js"></script>
+    <script type="module" src="/src/utils/buscador.js"></script>
+    <!-- <script type="module" src="main.js"></script> -->
+    <script type="module" src="src/utils/categorias.js"></script>
+    <script src="src/utils/modal-categorias.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
