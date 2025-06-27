@@ -560,6 +560,17 @@
       "year": 2020,
       "description": "una descripción",
       "rating": 0
+    },
+    {
+      "id": "93fc",
+      "title": "Manzana",
+      "category": "mobiles",
+      "price": 20,
+      "image": "https://res.cloudinary.com/dkeilrzir/image/upload/v1751006524/urhse9svnkemat3zt1di.jpg",
+      "condition": "Mordida",
+      "year": 2020,
+      "description": "Una manzana mordida",
+      "rating": 0
     }
   ]
 }
