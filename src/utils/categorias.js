@@ -73,7 +73,7 @@ function renderSection(categoria, productos) {
       </span>
     </div>
     <div>
-      <span class="text-3xl font-bold text-gray-900">$${p.price}</span>
+      <span class="text-3xl font-bold text-gray-900">${p.price}€</span>
     </div>
   </div>
 </div>
