@@ -6,7 +6,7 @@
       "category": "mobiles",
       "price": 350,
       "description": "iPhone 12 reacondicionado con pantalla OLED y 64GB.",
-      "image": "/server/img/iphone12.webp",
+      "image": "/server/img/iphone12.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 3.5
@@ -17,7 +17,7 @@
       "category": "mobiles",
       "price": 320,
       "description": "Samsung Galaxy S20 reacondicionado, 128GB, cámara triple.",
-      "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=400&h=400&fit=crop",
+      "image": "/server/img/s20.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 2.4
@@ -28,7 +28,7 @@
       "category": "mobiles",
       "price": 300,
       "description": "Google Pixel 5 con Android puro y cámara de 12.2MP.",
-      "image": "https://example.com/images/pixel5.jpg",
+      "image": "/server/img/pixel5.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 3.3
@@ -39,7 +39,7 @@
       "category": "mobiles",
       "price": 280,
       "description": "OnePlus 8T reacondicionado con pantalla AMOLED de 120Hz.",
-      "image": "https://example.com/images/oneplus8t.jpg",
+      "image": "/server/img/oneplus8t.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.4
@@ -50,7 +50,7 @@
       "category": "mobiles",
       "price": 220,
       "description": "Xiaomi Mi 11 Lite reacondicionado, cámara de 64MP.",
-      "image": "https://example.com/images/mi11lite.jpg",
+      "image": "/server/img/xiamomi11lite.webp",
       "condition": "reacondicionado",
       "year": 2021,
       "rating": 4.9
@@ -61,11 +61,10 @@
       "category": "mobiles",
       "price": 210,
       "description": "Sony Xperia 10 II reacondicionado, pantalla OLED 21:9.",
-      "image": "https://example.com/images/xperia10ii.jpg",
+      "image": "/server/img/sony-xperia-10-ii-1.png",
       "condition": "reacondicionado",
       "year": 2020,
-      "rating": 5.0
-
+      "rating": 4
     },
     {
       "id": "7",
@@ -73,7 +72,7 @@
       "category": "mobiles",
       "price": 150,
       "description": "Motorola Moto G Power reacondicionado con batería de larga duración.",
-      "image": "https://example.com/images/motogpower.jpg",
+      "image": "/server/img/motorolamotogpower.jpg",
       "condition": "reacondicionado",
       "year": 2021,
       "rating": 1.1
@@ -84,7 +83,7 @@
       "category": "mobiles",
       "price": 250,
       "description": "Huawei P30 Pro reacondicionado con cámara Leica de 40MP.",
-      "image": "https://example.com/images/p30pro.jpg",
+      "image": "/server/img/p30pro.jpg",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 3.3
@@ -95,10 +94,10 @@
       "category": "mobiles",
       "price": 180,
       "description": "Nokia 7.2 reacondicionado con triple cámara y Android One.",
-      "image": "https://example.com/images/nokia72.jpg",
+      "image": "/server/img/nokia7.2.webp",
       "condition": "reacondicionado",
       "year": 2019,
-      "rating": 4.0
+      "rating": 4
     },
     {
       "id": "10",
@@ -106,7 +105,7 @@
       "category": "mobiles",
       "price": 200,
       "description": "LG Velvet reacondicionado, pantalla P-OLED y cámara dual.",
-      "image": "https://example.com/images/lgvelvet.jpg",
+      "image": "/server/img/lgvelvet.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 3.1
@@ -117,7 +116,7 @@
       "category": "mobiles",
       "price": 400,
       "description": "Asus ROG Phone 3 reacondicionado, ideal para gaming.",
-      "image": "https://example.com/images/rogphone3.jpg",
+      "image": "/server/img/asusrogphone3.webp",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.6
@@ -128,7 +127,7 @@
       "category": "mobiles",
       "price": 170,
       "description": "Realme 7 Pro reacondicionado, carga rápida y cámara de 64MP.",
-      "image": "https://example.com/images/realme7pro.jpg",
+      "image": "/server/img/realme7pro.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.8
@@ -139,7 +138,7 @@
       "category": "laptops",
       "price": 950,
       "description": "MacBook Air con chip M1, 8GB RAM, 256GB SSD.",
-      "image": " server/img/laptop.webp",
+      "image": " /server/img/airm1.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.8
@@ -150,7 +149,7 @@
       "category": "laptops",
       "price": 850,
       "description": "Dell XPS 13 reacondicionado con pantalla InfinityEdge 13.3\".",
-      "image": "https://example.com/images/dellxps13.jpg",
+      "image": "/server/img/dellxps13.avif",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.6
@@ -161,7 +160,7 @@
       "category": "laptops",
       "price": 900,
       "description": "HP Spectre x360 reacondicionado, convertible y táctil.",
-      "image": "https://example.com/images/hpspectre.jpg",
+      "image": "/server/img/hpspectre.avif",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 1.5
@@ -172,7 +171,7 @@
       "category": "laptops",
       "price": 1000,
       "description": "Lenovo ThinkPad X1 Carbon reacondicionado, ultraligero y potente.",
-      "image": "https://example.com/images/thinkpadx1.jpg",
+      "image": "/server/img/lenovo-x1.avif",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 2.7
@@ -183,7 +182,7 @@
       "category": "laptops",
       "price": 750,
       "description": "Asus ZenBook 14 reacondicionado, pantalla NanoEdge.",
-      "image": "https://example.com/images/zenbook14.jpg",
+      "image": "/server/img/asuszeenbok14.png",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 3.4
@@ -194,7 +193,7 @@
       "category": "laptops",
       "price": 880,
       "description": "Surface Laptop 3 reacondicionado con pantalla táctil de 13.5\".",
-      "image": "https://example.com/images/surfacelaptop3.jpg",
+      "image": "/server/img/microsoftsurfacelaptopt3.avif",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.5
@@ -205,7 +204,7 @@
       "category": "laptops",
       "price": 670,
       "description": "Acer Swift 3 reacondicionado, ultraligero y potente.",
-      "image": "https://example.com/images/acerswift3.jpg",
+      "image": "/server/img/acerswift3.webp",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.3
@@ -216,7 +215,7 @@
       "category": "laptops",
       "price": 1300,
       "description": "Razer Blade 15 reacondicionado, portátil gaming premium.",
-      "image": "https://example.com/images/razerblade15.jpg",
+      "image": "/server/img/razerbalde15.webp",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.7
@@ -227,7 +226,7 @@
       "category": "laptops",
       "price": 780,
       "description": "HP EliteBook 840 reacondicionado para profesionales.",
-      "image": "https://example.com/images/hpelitebook840.jpg",
+      "image": "/server/img/hpelitebook840.webp",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.4
@@ -238,7 +237,7 @@
       "category": "laptops",
       "price": 600,
       "description": "Dell Inspiron 15 reacondicionado, equilibrado para uso diario.",
-      "image": "https://example.com/images/dellinspiron15.jpg",
+      "image": "/server/img/dellinspiron15.png",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.2
@@ -249,7 +248,7 @@
       "category": "laptops",
       "price": 1200,
       "description": "MacBook Pro 13 reacondicionado con chip Intel y Retina display.",
-      "image": "https://example.com/images/macbookpro13.jpg",
+      "image": "/server/img/macbook-pro-13.webp",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.7
@@ -260,7 +259,7 @@
       "category": "laptops",
       "price": 950,
       "description": "Lenovo Yoga C940 reacondicionado, convertible y pantalla táctil.",
-      "image": "https://example.com/images/yogac940.jpg",
+      "image": "/server/img/lenovoyoga.avif",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.5
@@ -271,7 +270,7 @@
       "category": "smartwatches",
       "price": 300,
       "description": "Apple Watch Series 6 reacondicionado con monitor de oxígeno.",
-      "image": " /server/img/smartwatch.webp",
+      "image": " /server/img/applewatchserires6.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.7
@@ -282,7 +281,7 @@
       "category": "smartwatches",
       "price": 250,
       "description": "Samsung Galaxy Watch 4 reacondicionado, con Wear OS.",
-      "image": "https://example.com/images/galaxywatch4.jpg",
+      "image": "/server/img/samsunggalaxywatch4.jpg",
       "condition": "reacondicionado",
       "year": 2021,
       "rating": 4.6
@@ -293,7 +292,7 @@
       "category": "smartwatches",
       "price": 150,
       "description": "Fitbit Versa 3 reacondicionado con GPS y monitor de ritmo cardíaco.",
-      "image": "https://example.com/images/fitbitversa3.jpg",
+      "image": "/server/img/fitbitversa3.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.3
@@ -304,7 +303,7 @@
       "category": "smartwatches",
       "price": 220,
       "description": "Garmin Venu reacondicionado, ideal para deporte y salud.",
-      "image": "https://example.com/images/garminvenu.jpg",
+      "image": "/server/img/garminvenu.webp",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.5
@@ -315,7 +314,7 @@
       "category": "smartwatches",
       "price": 130,
       "description": "Huawei Watch GT 2 reacondicionado con gran batería.",
-      "image": "https://example.com/images/huaweigt2.jpg",
+      "image": "/server/img/huawei-watch-gt2-pro-sm.jpg",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.2
@@ -326,7 +325,7 @@
       "category": "smartwatches",
       "price": 140,
       "description": "Amazfit GTS 2 reacondicionado, buen balance calidad-precio.",
-      "image": "https://example.com/images/amazfitgts2.jpg",
+      "image": "/server/img/amazfitgts2.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.1
@@ -337,7 +336,7 @@
       "category": "smartwatches",
       "price": 160,
       "description": "Fossil Gen 5 reacondicionado con Wear OS y diseño clásico.",
-      "image": "https://example.com/images/fossilgen5.jpg",
+      "image": "/server/img/fossilgen5.jpg",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.2
@@ -348,7 +347,7 @@
       "category": "smartwatches",
       "price": 200,
       "description": "TicWatch Pro 3 reacondicionado con doble pantalla y batería larga.",
-      "image": "https://example.com/images/ticwatchpro3.jpg",
+      "image": "/server/img/ticwatchpro3.jpg",
       "condition": "reacondicionado",
       "year": 2021,
       "rating": 4.3
@@ -359,7 +358,7 @@
       "category": "smartwatches",
       "price": 130,
       "description": "Withings Steel HR reacondicionado, híbrido con monitor cardíaco.",
-      "image": "https://example.com/images/withingssteelhr.jpg",
+      "image": "/server/img/Withings Steel HR.jpg",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4
@@ -370,7 +369,7 @@
       "category": "smartwatches",
       "price": 180,
       "description": "Samsung Galaxy Watch Active 2 reacondicionado con GPS.",
-      "image": "https://example.com/images/galaxywatchactive2.jpg",
+      "image": "/server/img/SamsungGalaxyWatchActive2.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.4
@@ -381,7 +380,7 @@
       "category": "smartwatches",
       "price": 210,
       "description": "Garmin Forerunner 245 reacondicionado, para runners y fitness.",
-      "image": "https://example.com/images/forerunner245.jpg",
+      "image": "/server/img/GarminForerunner245.webp",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.5
@@ -392,7 +391,7 @@
       "category": "smartwatches",
       "price": 170,
       "description": "Skagen Falster 3 reacondicionado con Wear OS y diseño minimalista.",
-      "image": "https://example.com/images/skagenfalster3.jpg",
+      "image": "/server/img/SkagenFalster 3.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.1
@@ -403,7 +402,7 @@
       "category": "monitors",
       "price": 470,
       "description": "Monitor Dell UltraSharp 27\" 4K UHD, excelente para diseño.",
-      "image":  "/server/img/monitor.webp",
+      "image":  "/server/img/Dell UltraSharpU2723QE.jpeg",
       "condition": "reacondicionado",
       "year": 2021,
       "rating": 4.7
@@ -414,7 +413,7 @@
       "category": "monitors",
       "price": 600,
       "description": "Monitor gaming LG 27\" 4K UHD con 144Hz y HDR600.",
-      "image": "https://example.com/images/lg27gn950.jpg",
+      "image": "/server/img/LG 27GN950-B.avif",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.8
@@ -425,7 +424,7 @@
       "category": "monitors",
       "price": 550,
       "description": "Monitor curvo gaming Samsung 27\" QHD 240Hz.",
-      "image": "https://example.com/images/samsungodysseyg7.jpg",
+      "image": "/server/img/Samsung OdysseyG7.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.7
@@ -436,7 +435,7 @@
       "category": "monitors",
       "price": 400,
       "description": "Monitor ASUS 27\" WQHD para profesionales creativos.",
-      "image": "https://example.com/images/asusproartpa278.jpg",
+      "image": "/server/img/ASUS ProArt PA278QV.jpg",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.6
@@ -447,7 +446,7 @@
       "category": "monitors",
       "price": 430,
       "description": "Monitor ultrawide BenQ 35\" con HDR y curvatura suave.",
-      "image": "https://example.com/images/benqex3501r.jpg",
+      "image": "/server/img/BenQ EX3501R.jpg",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.5
@@ -458,7 +457,7 @@
       "category": "monitors",
       "price": 500,
       "description": "Monitor gaming Acer 27\" WQHD 165Hz G-Sync.",
-      "image": "https://example.com/images/acerpredatorxb271hu.jpg",
+      "image": "/server/img/Acer Predator XB271HU.webp",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.6
@@ -469,7 +468,7 @@
       "category": "monitors",
       "price": 320,
       "description": "Monitor ViewSonic 32\" Full HD, elegante y delgado.",
-      "image": "https://example.com/images/viewsonicvx3276.jpg",
+      "image": "/server/img/ViewSonic VX3276.jpg",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.3
@@ -480,7 +479,7 @@
       "category": "monitors",
       "price": 650,
       "description": "Monitor profesional Eizo 27\" 4K UHD con HDR.",
-      "image": "https://example.com/images/eizoev2785.jpg",
+      "image": "/server/img/Eizo EV2785.webp",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.8
@@ -491,7 +490,7 @@
       "category": "monitors",
       "price": 350,
       "description": "Monitor HP 27\" Full HD para uso profesional y general.",
-      "image": "https://example.com/images/hpz27.jpg",
+      "image": "/server/img/HP Z27.jpg",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.2
@@ -502,7 +501,7 @@
       "category": "monitors",
       "price": 600,
       "description": "Monitor ultrawide LG 34\" WQHD con USB-C.",
-      "image": "https://example.com/images/lg34wn80cb.jpg",
+      "image": "/server/img/LG 34WN80C-B.webp",
       "condition": "reacondicionado",
       "year": 2020,
       "rating": 4.5
@@ -513,18 +512,18 @@
       "category": "monitors",
       "price": 250,
       "description": "Monitor Dell 24\" Full HD para oficina y productividad.",
-      "image": "https://example.com/images/dellp2419h.jpg",
+      "image": "/server/img/Dell P2419H.webp",
       "condition": "reacondicionado",
       "year": 2019,
       "rating": 4.3
     },
     {
-      "id": 48,
+      "id": "48",
       "title": "ASUS VG245H",
       "category": "monitors",
       "price": 220,
       "description": "Monitor gaming ASUS 24\" Full HD 75Hz FreeSync.",
-      "image": "https://example.com/images/asusvg245h.jpg",
+      "image": "/server/img/ASUS VG245H.jpg",
       "condition": "reacondicionado",
       "year": 2018,
       "rating": 4.1
@@ -535,7 +534,7 @@
     "category": "tablets",
     "price": 450,
     "description": "iPad Air de 10.9 pulgadas, chip A14 Bionic, 64GB.",
-    "image": "/server/img/ipad-air4.webp",
+    "image": "/server/img/iPad Air 4ª Gen.jpg",
     "condition": "reacondicionado",
     "year": 2020,
     "rating": 3.2
@@ -546,7 +545,7 @@
     "category": "tablets",
     "price": 400,
     "description": "Tablet Samsung con pantalla de 11 pulgadas y 128GB.",
-    "image": "/server/img/galaxy-tab-s7.webp",
+    "image": "/server/img/Samsung Galaxy Tab S7.jpg",
     "condition": "reacondicionado",
     "year": 2020,
     "rating": 4.4
@@ -557,7 +556,7 @@
     "category": "tablets",
     "price": 330,
     "description": "Lenovo Tab con pantalla OLED de 11.5 pulgadas y 128GB.",
-    "image": "/server/img/lenovo-p11-pro.webp",
+    "image": "/server/img/Lenovo Tab P11 Pro.webp",
     "condition": "reacondicionado",
     "year": 2021,
     "rating": 5.0
@@ -568,7 +567,7 @@
     "category": "tablets",
     "price": 300,
     "description": "Huawei MatePad con pantalla de 10.95'' y 128GB.",
-    "image": "/server/img/matepad11.webp",
+    "image": "/server/img/Huawei MatePad 11.jpg",
     "condition": "reacondicionado",
     "year": 2021,
     "rating": 2.3
@@ -579,7 +578,7 @@
     "category": "tablets",
     "price": 350,
     "description": "Surface Go 2 con pantalla de 10.5 pulgadas y 64GB.",
-    "image": "/server/img/surface-go2.webp",
+    "image": "/server/img/Microsoft Surface Go 2.webp",
     "condition": "reacondicionado",
     "year": 2020,
     "rating": 1.1
@@ -590,7 +589,7 @@
     "category": "tablets",
     "price": 320,
     "description": "iPad 10.2 pulgadas con chip A12 Bionic y 32GB.",
-    "image": "/server/img/ipad8gen.webp",
+    "image": "/server/img/iPad 8ª Gen.jpg",
     "condition": "reacondicionado",
     "year": 2020,
     "rating": 3.5
@@ -601,7 +600,7 @@
     "category": "tablets",
     "price": 200,
     "description": "Galaxy Tab A7 con pantalla de 10.4 pulgadas y 64GB.",
-    "image": "/server/img/tab-a7.webp",
+    "image": "/server/img/Samsung Galaxy Tab A7.jpg",
     "condition": "reacondicionado",
     "year": 2020,
     "rating": 4.0
@@ -612,7 +611,7 @@
     "category": "tablets",
     "price": 370,
     "description": "Xiaomi Pad 5 con pantalla 120Hz de 11 pulgadas y 128GB.",
-    "image": "/server/img/xiaomi-pad5.webp",
+    "image": "/server/img/Xiaomi Pad 5.jpg",
     "condition": "reacondicionado",
     "year": 2021,
     "rating": 4.5
@@ -623,7 +622,7 @@
     "category": "tablets",
     "price": 150,
     "description": "Tablet Fire HD 10 con 64GB y pantalla Full HD.",
-    "image": "/server/img/fire-hd10.webp",
+    "image": "/server/img/Amazon Fire HD 10.jpeg",
     "condition": "reacondicionado",
     "year": 2021,
     "rating": 3.0
@@ -634,7 +633,7 @@
     "category": "tablets",
     "price": 210,
     "description": "Tablet Android 11 con pantalla de 10.4 pulgadas.",
-    "image": "/server/img/teclast-t40.webp",
+    "image": "/server/img/Teclast T40 Pro.jpg",
     "condition": "reacondicionado",
     "year": 2022,
     "rating": 5.0
@@ -645,7 +644,7 @@
     "category": "tablets",
     "price": 280,
     "description": "iPad Mini de 7.9 pulgadas con chip A12 y 64GB.",
-    "image": "/server/img/ipad-mini5.webp",
+    "image": "/server/img/iPad Mini 5ª Gen.jpg",
     "condition": "reacondicionado",
     "year": 2019,
     "rating": 1.0
@@ -656,7 +655,7 @@
     "category": "tablets",
     "price": 250,
     "description": "Tablet 2 en 1 con Windows 10 y pantalla Full HD.",
-    "image": "/server/img/chuwi-hi10x.webp",
+    "image": "/server/img/Chuwi Hi10 X.webp",
     "condition": "reacondicionado",
     "year": 2021,
     "rating": 3.5
