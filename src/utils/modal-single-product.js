@@ -19,7 +19,7 @@ export function openProductModal(producto) {
   modalImg.src = producto.image;
   modalImg.alt = producto.title;
   modalTitulo.textContent = producto.title;
-  precioSpan.textContent = `$${producto.price}`;
+  precioSpan.textContent = `${producto.price}€`;
   modalDescripcion.textContent = producto.description;
   modalEstado.textContent = producto.state ?? "Nuevo";
   modalAnio.textContent = producto.year ?? "2024";
