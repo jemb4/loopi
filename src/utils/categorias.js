@@ -5,7 +5,12 @@ document.addEventListener("DOMContentLoaded", async () => {
   const categoria = urlParams.get("categoria");
   const container = document.getElementById("productos-container");
 
-  container.innerHTML = `<p class="text-center text-gray-500">Cargando productos...</p>`;
+  container.innerHTML = `
+    <div class="flex flex-col items-center justify-center py-12 text-center text-gray-500">
+    <div class="w-12 h-12 border-4 border-blue-500 border-dashed rounded-full animate-spin border-t-transparent"></div>
+    <p class="mt-4">Cargando productos...</p>
+  </div>
+  `;
 
   try {
     const res = await fetch("http://localhost:8000/products");
@@ -37,7 +42,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     container.innerHTML = html;
   } catch (error) {
-    container.innerHTML = `<p class="text-red-500 text-center">Error cargando productos</p>`;
+    container.innerHTML = `
+  <div class="flex flex-col items-center justify-center py-12 text-center text-red-500">
+    <svg class="w-12 h-12 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.54-10.46a.75.75 0 10-1.06-1.06L10 8.94 7.52 6.48a.75.75 0 00-1.06 1.06L8.94 10l-2.48 2.48a.75.75 0 101.06 1.06L10 11.06l2.48 2.48a.75.75 0 101.06-1.06L11.06 10l2.48-2.48z" clip-rule="evenodd"/>
+    </svg>
+    <p class="mt-4">Error cargando productos</p>
+  </div>
+`;
     console.error(error);
   }
 });
